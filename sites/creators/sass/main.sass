@@ -1,0 +1,280 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	margin: 0
+	padding: 0
+
+body, html
+	font-family: Arial
+	font-size: 1.3em
+	overflow-x: hidden
+	min-width: 320px
+
+.grid
+	display: grid
+
+.btn
+	color: #FFFFFF
+	background-color: $orange
+	outline: none
+	border: none
+	cursor: pointer
+	text-decoration: none
+	box-shadow: 0 -0.15em rgba(0, 0, 0, .18) inset
+
+
+
+.main-header
+	background: url("../img/0-header.jpg") center no-repeat
+	background-size: cover //stretch
+	min-height: 100vh
+	align-content: center
+	justify-content: center
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: $image-filter-color
+		opacity: .92
+		
+	.header-content
+		position: relative
+		bottom: 5vh
+		z-index: 1
+		h1
+			color: #FFFFFF
+			font-family: "IntroRegular"
+			font-weight: 400
+			font-size: 60pt
+			text-align: center
+			line-height: 2.5
+		.header-buttons
+			font-family: "RalewayBold"
+			justify-self: center
+			font-size: 20pt
+			.btn-home
+				background-color: $gray
+				&:hover
+					background-color: $pre-gray
+				&:active
+					background-color: $post-gray
+			.btn-follow:hover
+				background-color: $pre-orange
+			.btn-follow:active
+				background-color: $post-orange
+			.btn-home, .btn-follow
+				padding: 1.5vh 3vw
+				margin: 0 1vw
+				border-radius: 2px
+				transition: background-color .1s ease 
+
+.sth-cool
+	padding: .2em
+	grid-template-columns: repeat(4, 1fr)
+	grid-gap: 1vh .5vh
+	.portfolio-item
+		text-align: center
+		background-size: cover !important
+		background-position:  center !important
+		color: #FFFFFF
+		cursor: pointer
+		user-select: none
+		min-height: 32vh
+		position: relative
+		&:nth-child(1)
+			grid-column: 1 / 3
+		&:nth-child(5)
+			grid-column: 2 / 4
+		&:nth-child(6)
+			grid-column: 4
+			grid-row: 2/4
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-color: $image-filter-color
+			opacity: .65
+			transition: opacity .5s ease
+		&:hover:before
+			opacity: .85
+		span
+			z-index: 1
+			display: flex
+			align-items: center
+			justify-content: center
+			font-size: 20pt
+			font-weight: 700
+			font-family: "RalewayBold"
+			&:hover
+				color: $orange
+
+.ready
+	background-color: #ededed
+	padding: 10vh 5vw
+
+	.ready-content
+		grid-template-columns: 1fr 1fr
+		padding: 0 5vw
+		.ready-right
+			border-right: solid #dadada 1px
+			padding-right: 4vw
+			padding-bottom: 5vh
+			h2
+				color: #293a43
+				font-family: "RalewayExtraBold"
+				font-size: 34pt
+				font-weight: 800
+				line-height: 1.2
+				padding-bottom: 5vh
+			p
+				color: $gray
+				font-family: "RalewayRegular"
+				font-size: 18pt
+				padding-bottom: 4vh
+				line-height: 1.5
+		.ready-left
+			.img
+				padding-left: 3vw
+				display: block
+				max-width: 100%
+				height: auto
+
+.feedback
+	display: block
+	background-color: #293a43
+	padding: 3vh 0
+	position: relative
+	.feedback-content
+		position: relative
+		max-width: 70vw
+		margin: auto
+		form
+			grid-template-columns: repeat(4, 1fr)
+			grid-column-gap: 1vw
+			*
+				padding: 2vh 1vw
+				border-radius: 3px
+			input
+				outline: none
+				background-color: #314853
+				color: #49636e
+				border: none
+				font-style: italic
+				font-family: Arial
+				transition: background-color .1s ease
+				&:focus
+					background-color: #ededed
+			button
+				text-transform: uppercase
+				font-family: "RalewayBold"
+				font-size: 17px
+				transition: background-color .1s ease
+				// width: 60% //???
+				// box-shadow: 0 -0.25em rgba(0, 0, 0, .18) inset
+				&:hover
+					background-color: $pre-orange
+				&:active
+					background-color: $post-orange
+
+.progress
+	padding: 10vh 10vw 15vh 10vw
+	text-transform: capitalize
+	.progress-content
+		h2
+			color: #293a43
+			padding: 5vh 0 7vh 0
+		.progress-blocks
+			grid-template-columns: repeat(4, 1fr)
+			grid-template-rows: repeat(2, 1fr)
+			grid-gap: 1vw
+			.progress-item
+				background-color: #f7f7f7 
+				cursor: pointer
+				grid-template-rows: 1fr 1fr	
+				// max-height: 80vh
+				overflow: hidden
+				transition: background-color .25s ease
+				&:nth-child(3)
+					grid-column: 3/5
+					align-items: center
+				&:nth-child(4)
+					grid-column: 1/3
+					align-items: center
+				&:hover
+					background-color: #ededed
+					.progress-photo
+						transform: scale(1.05) translateY(-6.5px)
+				.progress-photo
+					background-position:  center !important
+					background-size: cover !important
+					// height: 40vh
+					// height: 100%
+					height: 270px
+					transition: transform .25s ease
+					overflow: hidden
+					align-self: start
+				.progress-item-content
+					padding: 7% 
+					.progress-text
+						text-transform: none
+						text-align: center
+						color: #293a43
+						font-size: 14pt
+						font-family: "RalewayRegular"
+					h3 
+						text-align: center
+						color: #293a43
+						font-size: 18pt
+						line-height: 1.3
+						padding-bottom: 4vh
+						font-family: "RalewayBold"
+
+.main-footer
+	background-color: #1a242a
+	color: #4e5355
+	padding: 8vh 0 6vh 0
+	.footer-content
+		text-transform: uppercase
+		text-align: center
+		font-family: "RalewayExtraBold"
+		.footer-creators
+			font-size: 22px
+			line-height: 1.2	
+			padding-bottom: 5vh
+			span
+				color: #707476
+				font-size: 27.5px
+		.footer-copyright
+			color: #494d50
+			font-size: 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+@import "media" //Always in end
