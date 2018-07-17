@@ -1,0 +1,270 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Custom */
+@media only screen and (max-width : 1400px)
+	.gallery
+		.gallery-content
+			.gallery-left
+				.gallery-left-text
+					.gallery-caption
+						flex: 30%
+					.gallery-text
+						flex: 70%
+				.gallery-left-block
+			.gallery-right
+				top: 90vh
+				right: 15vw
+				img
+					height: 119vh
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-header
+		.header-content
+			padding: 10vh
+			.header-forest
+				max-width: 100%
+				.header-forest-list
+					.header-list-deep
+						letter-spacing: 0
+					.header-list-text
+						line-height: 1.5
+	.gallery
+		.gallery-content
+			.gallery-left
+				.gallery-left-text
+					.gallery-caption
+						flex: 30%
+					.gallery-text
+						flex: 70%
+				.gallery-left-block
+			.gallery-right
+				top: 104vh
+				right: 12vw
+				img
+					height: 100vh
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.gallery
+		.gallery-content
+			grid-template-columns: 1fr
+			.gallery-left
+				// grid-column: 1
+				.gallery-left-text
+					.gallery-caption
+						flex: 30%
+					.gallery-text
+						flex: 70%
+				.gallery-left-block
+					display: none
+				.gallery-left-adaptive
+					display: grid
+					grid-template-columns: 1fr 1fr 
+					.gallery-photo
+						min-height: 40vh
+						background-size: cover !important
+						background-repeat: no-repeat !important
+			.gallery-right
+				// position: relative
+				display: none
+	.main-footer
+		padding: 10vh 10vw
+		.footer-content
+			.footer-descr
+				.footer-caption
+				.footer-text
+			.footer-video
+				.video-triangle
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main-header
+		.header-content
+			padding: 15vh 10vw 15vh 5vw
+			.header-forest
+				.header-forest-list
+					.header-list-explore
+					.header-list-deep
+						font-size: 56pt
+					.header-list-text
+	.gallery
+		.gallery-content
+			.gallery-left
+				.gallery-left-text
+					.gallery-caption
+					.gallery-text
+				.gallery-left-block
+				.gallery-left-adaptive
+					grid-template-columns: 1fr
+					.gallery-photo
+			.gallery-right
+	.main-footer
+		.footer-content
+			.footer-descr
+				.footer-caption
+				.footer-text
+			.footer-video
+				min-height: 50vh
+				.video-triangle
+
+
+/* Custom */
+@media only screen and (max-width : 610px)
+	.main-header
+		.header-content
+			padding: 10vh 5vw 3vh 0
+			.tourism
+			.header-forest
+				.header-forest-list
+					.header-list-explore
+					.header-list-deep
+						font-size: 48pt
+					.header-list-text
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.main-header
+		align-content: center
+		.header-content
+			height: 70vh
+			.tourism
+			.header-forest
+				.header-forest-list
+					.header-list-explore
+						font-size: 20pt
+					.header-list-deep
+						font-size: 42pt
+					.header-list-text
+	.gallery
+		padding: 3vh 10vw 5vh 10vw
+		.gallery-content
+			.gallery-left
+				grid-column: 1
+				.gallery-left-text
+					flex-direction: column
+					text-align: center
+					margin-bottom: 3vh
+					.gallery-caption
+					.gallery-text
+				.gallery-left-block
+				.gallery-left-adaptive
+					.gallery-photo
+			.gallery-right
+	.forest
+		padding: 10vh 20vw
+		.forest-content
+			.forest-caption
+			.forest-text
+				margin-top: 2vh
+				line-height: 1.7
+	.statistics
+		.statistics-content
+			padding: 5vh 15vw 10vh 15vw
+			h2
+				margin-bottom: 5vh
+				font-size: 36pt
+				font-weight: medium
+			.statistics-facts
+				text-align: center
+				h3
+				p
+				.facts
+					.fact
+						margin: 1vh 0
+						.fact-number
+						.fact-text
+	.main-footer
+		.footer-content
+			grid-gap: 5vh 0
+			.footer-descr
+				.footer-caption
+				.footer-text
+					line-height: 1.7
+			.footer-video
+				min-height: 40vh
+				.video-triangle
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.tourism
+		font-size: 20pt
+	.main-header
+		.header-content
+			.header-forest
+				.header-forest-list
+					.header-list-explore
+						font-size: 18pt
+						margin-bottom: 3px
+					.header-list-deep
+						line-height: 1
+						font-size: 38pt
+					.header-list-text
+	.gallery
+		.gallery-content
+			.gallery-left
+				.gallery-left-text
+					margin-bottom: 1vh
+	.statistics
+		.statistics-content
+			h2
+				font-size: 30pt
+			.statistics-facts
+				h3
+					font-size: 26pt
+				p
+				.facts
+					.fact
+						.fact-number
+						.fact-text
+	.main-footer
+		padding: 8vh 10vw 5vh 10vw
+		.footer-content
+			.footer-descr
+				.footer-caption
+				.footer-text
+			.footer-video
+				min-height: 30vh
+				.video-triangle
+	.forest
+		.forest-content
+			.forest-caption
+				white-space: nowrap
+			.forest-text
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

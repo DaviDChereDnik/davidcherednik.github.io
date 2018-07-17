@@ -1,0 +1,209 @@
+
+@import "fonts"
+@import "libs"
+@import "vars"
+
+body, html
+	margin: 0
+	padding: 0
+	font-family: Arial
+	font-size: 1em
+	opacity: 1
+	overflow-x: hidden
+	min-width: 320px
+
+.grid 
+	display: grid
+
+.flex
+	display: flex
+
+.tourism
+	justify-self: center
+	align-self: start 
+	color: #FFFFFF
+	font-size: 21pt
+	font-family: "RobotoRegular"
+	.tourism-bold
+		font-family: "RobotoMedium"
+
+
+.main-header
+	background: url("/img/header-0.png") center no-repeat
+	background-size: cover
+	min-height: 100vh
+	max-height: 640px
+	.header-content
+		grid-template-rows: 1fr 1fr
+		grid-template-columns: 1fr
+		padding: 5vh 10vw
+		.header-forest
+			max-width: 50vw
+			align-self: start
+			.header-forest-list
+				list-style-type: none
+				.header-list-explore
+					font-family: "RobotoBold"
+					font-size: 24pt
+					color: $gray
+					text-transform: uppercase
+					line-height: .5em
+				.header-list-deep
+					font-family: "RobotoBold"
+					font-size: 65pt
+					color: #FFFFFF
+					text-transform: uppercase
+					letter-spacing: 5px
+					margin-bottom: 5px
+				.header-list-text
+					font-family: "RobotoRegular"
+					font-size: 14pt
+					color: #FFFFFF
+					font-weight: lighter
+					letter-spacing: 1px
+
+.gallery
+	padding: 7vh 15vw
+	.gallery-content
+		grid-template-columns:  1fr 1fr 1fr
+		.gallery-left
+			grid-column: 1/3
+			.gallery-left-text
+				font-family: "RobotoLight"
+				justify-content: space-between
+				align-items: center
+				margin-bottom: 5vh
+				.gallery-caption
+					flex: 20%
+					font-size: 30pt
+					font-weight: lighter
+				.gallery-text
+					flex: 80%
+					font-size: 13pt
+					font-weight: lighter
+			.gallery-left-block
+				background: url("/img/gallery-block-all.png") center no-repeat
+				background-size: cover
+				min-height: 80vh
+				width: auto
+			.gallery-left-adaptive
+				display: none
+		.gallery-right
+			position: absolute
+			right: 17vw
+			top: 90vh
+			img
+				height: 113.5vh
+
+.forest
+	background: url("/img/forest-0.png") center no-repeat
+	background-size: cover
+	padding: 15vh 25vw
+	.forest-content
+		font-family: "RobotoLight"
+		color: #FFFFFF
+		justify-items: center
+		grid-gap: 3vh 0
+		.forest-caption
+			font-size: 24pt
+			border: #FFFFFF 1px solid
+			padding: .5vh 1vw
+		.forest-text
+			font-size: 14pt
+			text-align: center
+			line-height: 2.3
+
+.statistics
+	overflow-y: hidden
+	.statistics-content
+		padding: 5vh 15vw 15vh 15vw
+		h2
+			font-family: "RobotoLight"
+			font-size: 30pt
+			text-align: center
+			font-weight: lighter
+		.statistics-facts
+			h3
+				font-family: "RobotoLight"
+				font-size: 30pt
+				margin: 0
+				font-weight: lighter
+			p
+				font-family: "RobotoLight"
+				font-size: 14pt
+				line-height: 1.5
+				margin-bottom: 3vh
+			.facts
+				justify-content: space-around
+				background-color: $white
+				border-radius: 2px
+				flex-wrap: wrap
+				.fact
+					text-align: center
+					padding: 1vh 0
+					.fact-number
+						font-family: "RobotoMedium"
+						font-size: 28pt
+					.fact-descr
+						font-family: "RobotoRegular"
+						font-size: 18pt	
+						font-weight: lighter
+
+.main-footer
+	background: url("/img/footer-0.png") center no-repeat
+	background-size: cover
+	// min-height: 100vh
+	padding: 10vh 20vw
+	.footer-content
+		color: #FFFFFF
+		grid-gap: 10vh 0
+		.footer-descr
+			font-family: "RobotoLight"
+			justify-items: center
+			grid-gap: 3vh 0
+			padding: 0 5vw
+			.footer-caption
+				font-size: 24pt
+				border: #FFFFFF 1px solid
+				padding: .5vh 1vw
+			.footer-text
+				font-size: 14pt
+				text-align: center
+				line-height: 2
+		.footer-video
+			background-color: $gray
+			min-height: 70vh
+			// box-shadow: -20px 12px 20px -5px rgba(0, 0, 0, .3)
+			align-items: center
+			justify-content: center
+			background-color: #272727
+			border-radius: 3px
+			.video-triangle
+				background-color: #FFFFFF
+				position: relative
+				cursor: pointer
+				&:before,
+				&:after 
+					content: ''
+					position: absolute
+					background-color: inherit
+				&,
+				&:before,
+				&:after 
+					width: 2em
+					height: 2em
+					border-top-right-radius: 20%
+				& 
+					transform: rotate(-90deg) skewX(-30deg) scale(1,.866)
+				&:before 
+					transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%)
+				&:after 
+					transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%)
+
+
+
+
+
+
+
+@import "media" //Always in end
