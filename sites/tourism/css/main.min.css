@@ -55,7 +55,7 @@ body, html {
 }
 
 .main-header {
-  background: url("/img/header-0.png") center no-repeat;
+  background: url("../img/header-0.png") center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   min-height: 100vh;
@@ -148,7 +148,7 @@ body, html {
 }
 
 .gallery .gallery-content .gallery-left .gallery-left-block {
-  background: url("/img/gallery-block-all.png") center no-repeat;
+  background: url("../img/gallery-block-all.png") center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   min-height: 80vh;
@@ -170,7 +170,7 @@ body, html {
 }
 
 .forest {
-  background: url("/img/forest-0.png") center no-repeat;
+  background: url("../img/forest-0.png") center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   padding: 15vh 25vw;
@@ -253,7 +253,7 @@ body, html {
 }
 
 .main-footer {
-  background: url("/img/footer-0.png") center no-repeat;
+  background: url("../img/footer-0.png") center no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   padding: 10vh 20vw;
