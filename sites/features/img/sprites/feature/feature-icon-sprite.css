@@ -1,0 +1,11 @@
+.bg-airplane 
+	width: 67px; height: 67px
+	background: url('css_sprites.png') -0 -0
+
+.bg-bulb 
+	width: 67px; height: 67px
+	background: url('css_sprites.png') -67px -0
+
+.bg-picture 
+	width: 67px; height: 67px
+	background: url('css_sprites.png') -134px -0

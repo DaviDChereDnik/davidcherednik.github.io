@@ -1,0 +1,21 @@
+.bg-dribbble_icon 
+	width: 20px; height: 21px
+	background: url('css_sprites.png') -30px -0
+
+
+
+.bg-facebook_icon 
+	width: 11px; height: 21px
+	background: url('css_sprites.png') -0 -0
+
+
+
+.bg-googleplus_icon 
+	width: 20px; height: 17px
+	background: url('css_sprites.png') -50px -0
+
+
+
+.bg-twitter_icon 
+	width: 19px; height: 17px
+	background: url('css_sprites.png') -11px -0

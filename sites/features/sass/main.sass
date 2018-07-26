@@ -1,0 +1,479 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+body, html
+	margin: 0
+	padding: 0
+	font-family: Arial
+	font-size: 1em
+	opacity: 1
+	overflow-x: hidden
+	min-width: 320px
+	// background-color: #222
+
+#preloader
+	background: $gray
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	#loader
+		display: block
+		position: relative
+		left: 50%
+		top: 50%
+		width: 150px
+		height: 150px
+		margin: -75px 0 0 -75px
+		border-radius: 50%
+		border: 3px solid transparent
+		border-top-color: #9370DB
+		animation: spin 2s linear infinite
+		&:before
+			content: ""
+			position: absolute
+			top: 5px
+			left: 5px
+			right: 5px
+			bottom: 5px
+			border-radius: 50%
+			border: 3px solid transparent
+			border-top-color: #BA55D3
+			animation: spin 3s linear infinite
+		&:after
+			content: ""
+			position: absolute
+			top: 15px
+			left: 15px
+			right: 15px
+			bottom: 15px
+			border-radius: 50%
+			border: 3px solid transparent
+			border-top-color: #FF00FF
+			animation: spin 1.5s linear infinite
+
+@keyframes spin
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+
+
+
+.inscr
+	text-transform: uppercase
+	color: $pink
+	font-family: "ExoMedium"
+	font-size: 16pt
+	font-weight: 500
+	letter-spacing: 2px //???
+	padding-bottom: 1vh
+
+
+.main-header
+	background: url("../img/bg/header-bg.png") center no-repeat
+	background-size: cover
+	min-height: 100vh
+	display: flex
+	align-items: center
+	.header-content
+		text-align: center
+		.header-caption
+			margin-bottom: 5vh
+			h1
+				font-family: "ExoThin"
+				font-size: 60pt
+				font-weight: lighter
+				line-height: 1.2
+		.header-play
+			user-select: none
+			margin-bottom: 10vh
+			.header-play-content
+				.header-play-img
+					img
+						height: 100%
+						width: 100%
+						object-fit: cover
+						transition: transform .2s ease-in-out
+						&:hover
+							transform: scale(1.1)
+		.header-button
+			margin-bottom: 4vh
+			.header-button-content
+				.button
+					text-decoration: none
+					outline: none
+					text-transform: uppercase
+					font-family: "ExoRegular"
+					font-size: 16pt
+					color: #fff
+					background-color: #ff6969
+					border-radius: 5px
+					padding: 2vh 4vw
+					transition: background-color .2s ease-in-out
+					&:hover
+						background-color: #E86161
+					&:active
+						background-color: #CC5454
+	.header-comment
+		.header-comment-text
+			font-family: "ExoRegular"
+			font-size: 12pt
+			color: #000000
+
+
+.newdesign-bg
+	background: url("../img/bg/newdesign-bg.png") center no-repeat
+	background-size: cover
+	.newdesign
+		margin-left: 10vw
+		.newdesign-content
+			padding: 20vh 0
+			.newdesign-descr
+				.newdesign-caption
+					color: #000
+					font-family: "ExoMedium"
+					font-size: 40pt
+					font-weight: 500
+					padding-bottom: 3vh
+					line-height: 1.3
+					.newdesign-ellipsis
+						color: $pink
+						font-weight: 600 //???
+				.newdesign-text
+					color: #282828
+					font-family: "ExoMedium"
+					font-size: 16pt
+					font-weight: 500
+					p
+						padding: 1vh 0
+
+.awesome
+	background: url("../img/bg/features-bg.png") center no-repeat
+	background-size: cover
+	.awesome-content
+		text-align: center
+		padding: 20vh 0
+		min-width: 70vw !important
+		// height: 100vh
+		.awesome-preview
+			.awesome-preview-content
+				.inscr
+					padding-bottom: 0
+				.awesome-caption
+					font-family: "ExoMedium"
+					font-weight: 500
+					font-size: 40pt
+					color: #282828
+					padding-bottom: 10vh
+		.awesome-features
+			.awesome-feature
+				font-family: "ExoMedium"
+				.awesome-feature-picture
+					margin: 0 auto
+					padding-bottom: 12vh
+					width: 67px
+					height: 67px
+					transform: scale(1.2)
+				.awesome-feature-caption
+					font-size: 22pt
+				.awesome-feature-text
+					font-size: 16pt					
+				&:nth-child(1)
+					.awesome-feature-picture
+						background: url("../img/sprites/feature/feature-icon-sprite.png") -0 0 no-repeat
+				&:nth-child(2)
+					.awesome-feature-picture
+						background: url("../img/sprites/feature/feature-icon-sprite.png") -68px 0 no-repeat
+				&:nth-child(3)
+					.awesome-feature-picture
+						background: url("../img/sprites/feature/feature-icon-sprite.png") -135px 0 no-repeat
+.responsive-bg
+	background: url("../img/bg/responsive-bg.png") center no-repeat
+	background-size: cover
+	.responsive
+		padding: 15vh 10vw
+		.responsive-content
+			.responsive-macbook
+				.responsive-macbook-picture
+					transform: scale(1.2)
+					object-fit: cover
+					width: 100%
+					// height: 100%
+			.responsive-descr
+				padding-left: 5vw
+				font-family: "ExoMedium"
+				.inscr
+					padding-bottom: 1vh
+				.responsive-caption
+					font-size: 40pt
+					font-weight: 500
+					padding-bottom: 3vh
+					line-height: 1.3
+					.responsive-ellipsis
+						font-weight: 600
+						color: $pink
+						letter-spacing: 3px
+				.responsive-text
+					font-size: 16pt
+					font-weight: 500
+
+.founders
+	background: url("../img/bg/founders-bg.png") center no-repeat
+	background-size: cover
+	.founders-content
+		padding: 10vh 0
+		min-width: 70vw
+		.founders-blocks
+			.founder-block
+				font-family: "ExoMedium"
+				text-align: center
+				.founder-photo
+					background-color: #4E4E5E
+					height: 10vh
+					width: 10vh
+					margin: auto
+					border: #1E1E24 solid 2px
+				.founder-name
+					color: #fff
+					font-weight: 500
+					font-size: 22pt
+					padding-top: 2vh
+					margin-bottom: 0
+				.founder-status
+					font-weight: 500
+					font-size: 16pt
+					color: #ff6D6D
+				.founder-descr
+					padding-top: 3vh
+					padding-bottom: 10vh
+					font-family: "ExoRegularItalic"
+					font-size: 16pt
+					color: #fff
+		.founder-partners
+			margin: auto
+			width: 70vw
+			.founder-partner
+				filter: invert(70%)
+				height: 10vh
+				background-size: cover
+				transform: scale(1.2)
+				margin: auto
+				&:nth-child(1)
+					background: url("../img/sprites/partner/partner-logo/partner-logo-1.png") center no-repeat
+				&:nth-child(2)
+					background: url("../img/sprites/partner/partner-logo/partner-logo-4.png") center no-repeat
+				&:nth-child(3)
+					background: url("../img/sprites/partner/partner-logo/partner-logo-5.png") center no-repeat
+				&:nth-child(4)
+					background: url("../img/sprites/partner/partner-logo/partner-logo-7.png") center no-repeat
+				&:nth-child(5)
+					background: url("../img/sprites/partner/partner-logo/partner-logo-8.png") center no-repeat
+
+.browser
+	background-color: #F6F5F3
+	// height: 100vh
+	.browser-content
+		padding-top: 10vh
+		.browser-descr
+			.browser-descr-content
+				text-align: center
+				.inscr
+					padding: 0
+				.browser-caption
+					font-family: "ExoMedium"
+					font-size: 40pt
+					color: #282828
+					padding-bottom: 3vh
+					font-weight: 500
+				.browser-text
+					font-family: "ExoMedium"
+					font-size: 16pt
+					color: #282828
+					padding-bottom: 10vh
+					font-weight: 500
+		.browser-img
+			.browser-img-content
+				.browser-img-picture
+					width: 100%
+					object-fit: cover
+
+.tryit
+	background-color: #323969
+	.tryit-content
+		padding: 10vh 0
+		min-width: 80vw
+		.tryit-descr
+			.tryit-descr-content
+				text-align: center
+				.inscr
+					padding: 0
+				.tryit-caption
+					font-family: "ExoMedium"
+					font-weight: 500
+					font-size: 40pt
+					color: #FFFFFF
+		.tryit-try
+			.tryit-trial
+				margin: 2vh 0
+				.tryit-trial-content
+					white-space: nowrap
+					font-family: "ExoRegular"
+					color: #fff
+					font-size: 1.2em
+					font-weight: 400
+					.tryit-trial-arrow
+						font-size: 2em
+			.tryit-form
+				input
+					border: #FFFFFF solid 1px
+					background-color: #474D78
+					font-size: 16pt
+					padding: 1.5vh 1.5vw
+					transition: all .2s ease-in-out
+					&::placeholder
+						text-transform: uppercase
+						color: #fff
+					&:focus
+						background-color: #3B406B
+				button
+					cursor: pointer
+					background-color: #FF6D6D
+					font-size: 15pt
+					text-transform: uppercase
+					border: none
+					box-shadow: 0px 5px 3px rgba(14, 15, 15, .45)
+					transition: background-color .2s ease-in-out
+					&:hover
+						background-color: #ED6565
+					&:active
+						background-color: #D85E5E
+				input, button
+					margin: 0 1vw
+					border-radius: 3px
+					outline: none
+					color: #fff
+					font-family: "ExoRegular"
+					letter-spacing: 1px
+				.tryit-name
+				.tryit-email
+				.tryit-passwd
+					font: large Verdana, sans-serif
+					&::placeholder
+						font-family: "ExoRegular"
+						font-size: 16pt
+			.__tryit-try-down
+				display: none
+			.tryit-terms
+				padding-top: 5vh
+				.tryit-terms-content
+					font-family: "ExoRegular"
+					font-size: 16pt
+					color: #F6F5F3
+					text-align: center
+					.tryit-inscr
+						text-decoration: underline
+						color: inherit
+						&:hover, &:active, &:visited
+							color: inherit
+.footer-bg
+	background: url("../img/bg/footer-bg.png") center no-repeat
+	background-size: cover
+	.main-footer
+		min-width: 70vw
+		.footer-content
+			padding: 10vh 0
+			.footer-inscr
+				display: block
+				font-family: "ExoMedium"
+				font-weight: 500
+				font-size: 22pt
+				margin-bottom: 2vh
+			.footer-list
+				list-style-type: none
+				padding: 0
+				li
+					font-family: "ExoRegular"
+					font-weight: 400
+					font-size: 14pt
+					margin: .5vh 0
+					a
+						color: inherit
+						text-decoration: none
+						transition: all .2s ease-in-out
+						&:hover, &:visited, &:active
+							color: inherit
+						&:hover
+							color: #292929
+							font-weight: 600
+			.footer-company
+				font-family: "ExoMedium"
+				font-size: 14pt
+				font-weight: 400
+				.footer-company-logo
+					font-family: "LatoRegular"
+					font-size: 26pt
+					margin-bottom: 1.5vh 
+			.footer-support
+			.footer-about
+			.footer-get
+				.footer-get-form
+					// max-width: 90% //????
+					display: flex
+					.footer-get-email
+						flex: 80%
+						padding: 1.5vh 1vw
+						border-radius: 3px 0 0 3px
+						outline: none
+						border: #B8B8BF solid 1px
+						border-right: 0
+						background-color: #F6F6F6
+						caret-color: #777
+						font-family: "ExoRegular"
+						font-size: 16pt
+						transition: background-color .2s ease-in-out
+						&::placeholder
+							text-transform: uppercase
+						&:focus
+							background-color: #E3E3E3
+					.footer-get-submit
+						flex: 20%
+						cursor: pointer
+						border-radius: 3px
+						outline: none
+						border: none
+						background-color: #FF6D6D
+						color: #FFF
+						z-index: 1000
+						box-shadow: 0px 3px 3px 0px rgba(14, 15, 15, .45)
+						transition: background-color .2s ease-in-out
+						i
+							font-size: 20pt
+						&:hover
+							background-color: #ED6565
+						&:active
+							background-color: #D85E5E
+				.footer-social
+					margin: auto
+					margin-top: 2vh
+					display: flex
+					justify-content: space-around
+					max-width: 70%
+					a
+						&:hover, &:active, &:visited
+							color: inherit
+						i
+							color: #CBCBCB
+							font-size: 20pt
+							transition: all .2s ease-in-out
+							&:hover
+								color: #ADADAD
+								font-size: 24pt
+
+
+
+
+@import "media" //Always in end

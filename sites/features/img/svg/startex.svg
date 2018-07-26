@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="47" viewBox="0 0 42 47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff8a8a;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 48px;
+        fill: #212126;
+        font-family: Lato;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M12.336,2.687Q24.16,9.717,36.064,16.609t0,13.783q-11.9,6.891-23.728,13.922T0.59,37.422Q0.669,23.5.59,9.578T12.336,2.687Z"/>
+  <text id="Start_Ex" data-name="Start Ex" class="cls-2" transform="translate(-60.766 30.932) scale(0.551 0.56)">Start <tspan class="cls-3">Ex</tspan></text>
+</svg>

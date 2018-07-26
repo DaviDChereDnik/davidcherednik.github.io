@@ -1,0 +1,330 @@
+@import "vars"
+
+/* Small Devices, Tablets */
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width: 1500px)
+	.responsive-macbook-picture
+		padding-top: 5vh
+
+	.tryit-trial-content
+		font-size: 1em !important
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.newdesign-bg
+		background: none !important
+
+	.responsive
+		padding: 15vh 5vw 10vh 5vw !important
+	.responsive-macbook
+		display: none
+	.responsive-descr
+		text-align: center
+	.responsive-ellipsis
+		display: block !important
+		padding: 0 !important
+		margin: 0 !important
+		line-height: 0.3 !important
+
+	.founder-partners
+		width: 80vw !important
+	.founder-partner
+		margin-bottom: 5vh !important
+
+
+// ≥992px
++media-breakpoint-down(md)
+	h1
+		font-size: 50pt !important
+	.header-play-content
+		transform: scale(2.3)
+	.header-button-content
+		.button
+			padding: 2vh 7vw !important
+	.header-comment-text
+		color: #1E1E1E !important
+	
+	.newdesign-content
+		text-align: center
+		padding: 10vh 0 !important
+
+	.awesome-content
+		padding: 5vh 0 !important
+		min-height: 100vh !important
+	.awesome-feature
+		&:nth-child(3)
+			margin-top: 5vh
+
+	.browser-content
+		min-width: 90vw
+
+	.tryit-ellipsis
+		display: block !important
+		line-height: 0.3 !important
+	.tryit-caption
+		margin-bottom: 10vh !important
+	.tryit-form>input
+		padding: 2vh 2vw !important
+		&:nth-child(1), &:nth-child(2)
+			margin-bottom: $gutter !important
+	.__tryit-try-up
+		display: none !important
+	.__tryit-try-down
+		display: flex !important
+		margin-right: 5vw !important
+
+	.footer-bg
+		background: none !important
+	.main-footer
+		min-width: 80vw !important
+	.footer-company
+		text-align: center
+		margin-bottom: 5vh !important
+	.footer-support, .footer-about
+		text-align: center
+	.footer-get
+		margin-top: 3vh !important
+		text-align: center
+		.footer-get-form
+			// width: 50vw !important
+			i
+				// font-size: 16pt !important
+		.footer-social
+			margin-top: 5vh !important
+
+	.footer-social
+		justify-content: space-between !important
+		i
+			font-size: 30pt !important
+
+// ≥768px
++media-breakpoint-down(sm)
+	.header-caption
+		margin-bottom: 2vh !important
+		h1
+			font-size: 48pt !important
+	.header-play
+		margin-bottom: 3vh !important
+		.header-play-content
+			transform: scale(0.7) !important
+
+	.newdesign
+		margin: auto !important
+	.newdesign-caption
+		font-size: 36pt !important
+	.newdesign-ellipsis
+		display: block
+		line-height: 0.3
+
+	.awesome-content
+		padding: 7vh 0 !important
+	.awesome-caption
+		font-size: 36pt !important
+		white-space: nowrap
+		padding-bottom: 7vh !important
+	.awesome-feature
+		margin-bottom: 7vh !important
+		&:nth-child(3)
+			margin: 0 !important
+
+	.responsive-bg
+		background: none
+	.responsive
+		padding: 10vh 5vw !important
+
+	.founder-partner
+		margin-bottom: 5vh !important
+		&:nth-child(4), &:nth-child(5)
+			margin-bottom: 0 !important
+
+	.browser-img
+		display: none !important
+
+	.tryit-form>input
+		margin-bottom: $gutter !important
+		// padding: 0 !important
+	.tryit-form>button
+		padding: 2vh 2vw !important
+	.tryit-trial
+		margin-right: 0 !important
+		text-align: center !important
+		justify-content: center !important
+		.tryit-trial-content
+			font-size: 1.2em !important
+
+	.main-footer
+		min-width: 90vw !important
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	.header-caption
+		margin-bottom: 0 !important
+		h1
+			font-size: 36pt !important
+			font-weight: 600 !important
+	.header-button
+		margin-top: 5vh !important
+		.header-button-content
+			.button
+				padding: 2vh 12vw !important
+
+	.newdesign
+		padding: 0 10vw !important
+		.inscr
+			font-size: 14pt !important
+	.newdesign-caption
+		font-size: 30pt !important
+	.newdesign-text
+		p
+			font-size: 14pt !important
+
+	.awesome-content
+		padding: 7vh 7vw !important
+	.awesome-caption
+		white-space: normal !important
+		font-size: 32pt !important
+		font-weight: bolder !important
+
+	.responsive-caption
+		font-size: 34pt !important
+
+	.founders-content
+		padding: 10vh 7vw !important
+	.founder-partner
+		height: 12vh !important
+		margin: auto !important
+		margin-bottom: 5vh !important
+		&:nth-child(5)
+			padding-bottom: 0 !important
+	.founder-descr
+		padding-bottom: 7vh !important
+
+	.browser-content
+		padding-top: 7vh !important
+	.browser-caption
+		font-size: 36pt !important
+		line-height: 1.3 !important
+		font-weight: 600 !important
+
+	.tryit-caption
+		font-size: 36pt !important
+	.tryit-content
+		padding: 10vh 10vw !important
+	.tryit-terms-content
+		a
+			display: block !important
+
+	.main-footer
+		width: 90vw !important
+	.footer-content
+		padding: 5vh 0 !important
+
+
+
+@media only screen and (max-width:380px)
+	.awesome-caption
+		font-size: 28pt !important
+	.awesome-feature-picture
+		padding-bottom: 10vh !important
+
+	.responsive-caption
+		font-size: 28pt !important
+		font-weight: 500 !important
+
+	.tryit-caption
+		font-size: 32pt !important
+	.tryit-form>input
+		padding-left: 5vw !important
+	.tryit-terms-content
+		font-size: 14pt !important
+
+	.footer-bg
+		// height: 100vh !important
+		margin: 0 3vw !important
+		padding: 0 !important
+	.footer-about, .footer-support
+
+		ul
+			// position: relative
+			display: none
+	.footer-about
+		display: block
+	.footer-support[class*="col"], .footer-about[class*="col"]
+		flex: 0 0 100% !important
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+
+
+
+
+// OLD VARIANT, CAN WORK WITH IT WITHOUT BS4
+// /*==========  Desktop First  ==========*/
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (max-width : 1200px)
+// 	/**/
+
+
+// /* Medium Devices, Desktops */
+// @media only screen and (max-width : 992px)
+// 	/**/
+
+
+// /* Small Devices, Tablets */
+// @media only screen and (max-width : 768px)
+// 	/**/
+
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (max-width : 480px)
+// 	/**/
+
+
+// /* Custom, iPhone Retina */
+// @media only screen and (max-width : 320px)
+// 	/**/
+
+
+// /*==========  Mobile First  ==========*/
+
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width : 320px)
+// 	/**/
+
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width : 480px)
+// 	/**/
+
+
+// /* Small Devices, Tablets */
+// @media only screen and (min-width : 768px)
+// 	/**/
+
+
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width : 992px)
+// 	/**/
+
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width : 1200px)
+// 	/**/
