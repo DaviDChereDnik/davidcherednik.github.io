@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <base href="/"> -->
+
+    <title>Space hosting</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Image for social networks -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <meta property="og:title" content="Title">
+    <meta property="og:description" content="Description">
+
+
+    <!-- Connect favicon, expands for more support   -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#184957">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" type="text/css" href="libs/select2/dist/select2.min.css">
+    <!-- OwlCarousel -->
+    <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header class="main-header home-header container-fluid">
+        <nav class="main-navbar row align-items-center">
+            <div class="navbar-main-menu-button col-1">
+                <a href="javascript:void(0)">
+                    <img src="img/icons/navbar-menu-icon.svg" alt="" class="navbar-main-menu-icon">
+                </a>
+            </div>
+            <div class="navbar-logo col-3">
+                <a href="index.html" class="navbar-logo-content">
+                    <img src="img/icons/logo.svg" alt="" class="navbar-logo-img">
+                    <span class="navbar-logo-inscr">Globals</span>
+                </a>
+            </div>
+            <ul class="navbar-links col align-self-center">
+                <li class="navbar-home-link"><a href="javascript:void(0)">Home</a></li>
+                <li class="navbar-pages-link"><a href="javascript:void(0)">Pages</a></li>
+                <li class="navbar-hosting-link"><a href="javascript:void(0)">Hosting</a></li>
+                <li class="navbar-domains-link"><a href="javascript:void(0)">Domains</a></li>
+                <li class="navbar-blog-link"><a href="javascript:void(0)">Blog</a></li>
+                <li class="navbar-contacts-link"><a href="javascript:void(0)">Contacts</a></li>
+            </ul>
+            <div class="navbar-navigation col-2">
+                <a href="#">
+                    <img class="navbar-navigation-img" src="img/icons/navbar-navigation.svg" alt="">
+                </a>
+            </div>
+            <div class="navbar-internal-operations col-1">
+                <a href="#" class="navbar-internal-operations-three-dots">
+                    &#8942;
+                </a>
+                <ul class="navbar-internal-operations-list">
+                    <li class="navbar-internal-operations-account"><a href="javascript:void(0)">My Account</a></li>
+                    <li class="navbar-internal-operations-messages"><a href="javascript:void(0)">Messages</a></li>
+                    <li class="navbar-internal-operations-cart"><a href="javascript:void(0)">Shopping Cart</a></li>
+                    <li class="navbar-internal-operations-settings"><a href="javascript:void(0)">Settings</a></li>
+                    <li class="navbar-internal-operations-logout"><a href="javascript:void(0)">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-menu">
+            <section class="main-menu-autor">
+                <div class="main-menu-autor-img">
+                    <img src="img/icons/customer_circle.svg" alt="It's me">
+                </div>
+                <div class="main-menu-autor-inscr">&nbsp;David Cherednik</div>
+                <div class="main-menu-autor-email">
+                    <select class="main-menu-autor-email-content">
+                        <option>your.email@gmail.com</option>
+                        <option>david.cherednik@gmail.com</option>
+                    </select>
+                </div>
+            </section>
+            <section class="main-menu-services">
+                <h2 class="main-menu-services-caption">Our Services</h2>
+                <ul class="main-menu-services-list">
+                    <li class="main-menu-services-shared"><a href="https://google.com">Shared Hosting</a></li>
+                    <li class="main-menu-services-vps"><a href="javascript:void(0)">Vps Hosting</a></li>
+                    <li class="main-menu-services-dedicated"><a href="javascript:void(0)">Dedicated Servers</a></li>
+                    <li class="main-menu-services-domains"><a href="javascript:void(0)">Domains</a></li>
+                </ul>
+            </section>
+            <section class="main-menu-links">
+                <h2 class="main-menu-links-caption">Userful Links</h2>
+                <ul class="main-menu-links-content">
+                    <li class="main-menu-links-home"><a href="javascript:void(0)">Home</a></li>
+                    <li class="main-menu-links-about"><a href="javascript:void(0)">About Globals</a></li>
+                    <li class="main-menu-links-account"><a href="javascript:void(0)">My Account</a></li>
+                    <li class="main-menu-links-blog"><a href="javascript:void(0)">Company Blog</a></li>
+                    <li class="main-menu-links-support"><a href="javascript:void(0)">Support</a></li>
+                    <li class="main-menu-links-contact"><a href="javascript:void(0)">Contact Us</a></li>
+                </ul>
+            </section>
+            <section class="main-menu-search">
+                <h2 class="main-menu-search-caption">Search</h2>
+                <form>
+                    <input type="text" class="main-menu-search-input"  placeholder="Type and hit Enter">
+                </form>
+            </section>
+            <section class="main-menu-back">
+                <a href="javascript:void(0)"></a>
+            </section>
+        </div>
+        
+        <div class="header-content home-header-content">
+            <div class="row align-items-center">
+                <div class="header-descr home-header-descr col-12 col-xl">
+                    <div class="header-descr-content home-header-descr-content container-fluid">
+                        <h1 class="home-header-caption row">Hello World!</h1>
+                        <h2 class="header-inscr home-header-inscr row">Welcome to Space Hosting</h2>
+                        <p class="header-descr-inscr home-header-descr-inscr row">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum blanditiis animi ipsam dignissimos, non aperiam.</p>
+                        <div class="header-button home-header-button button row">Learn More<span class="header-button-arrow button-arrow">&nbsp;&rarr;</span></div>
+                    </div>
+                </div>
+                <div class="header-img home-header-img col-12 col-xl">
+                    <img src="img/pictures/earth.png" alt="" class="header-img-content home-header-img-content">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home--check-domain container-fluid">
+        <div class="home--check-domain-content row align-items-center">
+            <div class="home--check-domain-img col-12 col-xl">
+                <img src="img/pictures/businessman.png" alt="" class="home--check-domain-img-content">
+            </div>
+            <div class="home--check-domain-check col-12 col-xl container-fluid">
+                <h2 class="home--check-domain-caption">Check your domain name</h2>
+                <p class="home--check-domain-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore harum a velit vero placeat quod!</p>
+                <form action="#" class="home--check-domain-form">
+                    <input type="text" required class="home--check-domain-address" placeholder="www.">
+                    <select class="home--check-domain-select">
+                        <option>.com</option>
+                        <option>.net</option>
+                        <option>.org</option>
+                        <option>.biz</option>
+                        <option>.ua</option>
+                        <option>.info</option>
+                        <option>.tv</option>
+                    </select>
+                </form>
+                <button class="button home--check-domain-button">Check Availability</button>
+                <a href="javascript:void(0)" class="home--check-domain-all">See all domain pricing &nbsp;&rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="home--hosting-pluses container-fluid" id="home--hosting-pluses">
+        <div class="home--hosting-pluses-list row">
+            <div class="home--hosting-plus col-12 col-lg-6 col-xl-4">
+                <div class="home--hosting-pluses-img"><img src="img/icons/fast_hosting.svg" alt="" class="home--hosting-pluses-img-content"></div>
+                <div class="home--hosting-plus-content">
+                    <h3 class="home--hosting-pluses-caption">Fast web hosting</h3>
+                    <p class="home--hosting-pluses-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae, adipisci iusto enim quam consequatur quis. Nesciunt rerum esse ipsa.</p>
+                    <div class="home--hosting-pluses-button button">Read More &nbsp;&#187;</div>
+                </div>
+            </div>
+            <div class="home--hosting-plus col-12 col-lg-6 col-xl-4">
+                <div class="home--hosting-pluses-img"><img src="img/icons/quality_equipment.svg" alt="" class="home--hosting-pluses-img-content"></div>
+                <div class="home--hosting-plus-content">
+                    <h3 class="home--hosting-pluses-caption">Quality equipment</h3>
+                    <p class="home--hosting-pluses-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae, adipisci iusto enim quam consequatur quis. Nesciunt rerum esse ipsa.</p>
+                    <div class="home--hosting-pluses-button button">Read More &nbsp;&#187;</div>
+                </div>
+            </div>
+            <div class="home--hosting-plus col-12 col-lg-6 col-xl-4">
+                <div class="home--hosting-pluses-img"><img src="img/icons/data_analysis.svg" alt="" class="home--hosting-pluses-img-content"></div>
+                <div class="home--hosting-plus-content">
+                    <h3 class="home--hosting-pluses-caption">Data analysis</h3>
+                    <p class="home--hosting-pluses-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae, adipisci iusto enim quam consequatur quis. Nesciunt rerum esse ipsa.</p>
+                    <div class="home--hosting-pluses-button button">Read More &nbsp;&#187;</div>
+                </div>
+            </div>
+            <div class="home--hosting-plus col-12 col-lg-6 col-xl-4">
+                <div class="home--hosting-pluses-img"><img src="img/icons/technical_service.svg" alt="" class="home--hosting-pluses-img-content"></div>
+                <div class="home--hosting-plus-content">
+                    <h3 class="home--hosting-pluses-caption">Technical service</h3>
+                    <p class="home--hosting-pluses-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae, adipisci iusto enim quam consequatur quis. Nesciunt rerum esse ipsa.</p>
+                    <div class="home--hosting-pluses-button button">Read More &nbsp;&#187;</div>
+                </div>
+            </div>
+            <div class="home--hosting-plus col-12 col-lg-6 col-xl-4">
+                <div class="home--hosting-pluses-img"><img src="img/icons/daily_backups.svg" alt="" class="home--hosting-pluses-img-content"></div>
+                <div class="home--hosting-plus-content">
+                    <h3 class="home--hosting-pluses-caption">Daily backups</h3>
+                    <p class="home--hosting-pluses-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae, adipisci iusto enim quam consequatur quis. Nesciunt rerum esse ipsa.</p>
+                    <div class="home--hosting-pluses-button button">Read More &nbsp;&#187;</div>
+                </div>
+            </div>
+            <div class="home--hosting-plus col-12 col-lg-6 col-xl-4">
+                <div class="home--hosting-pluses-img"><img src="img/icons/247_support.svg" alt="" class="home--hosting-pluses-img-content"></div>
+                <div class="home--hosting-plus-content">
+                    <h3 class="home--hosting-pluses-caption">24/7 Support</h3>
+                    <p class="home--hosting-pluses-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi molestiae, adipisci iusto enim quam consequatur quis. Nesciunt rerum esse ipsa.</p>
+                    <div class="home--hosting-pluses-button button">Read More &nbsp;&#187;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home--hosting-offers container-fluid">
+        <div class="home--hosting-offers-content row">
+            <div class="home--hosting-offers-shared col-12 col-xl">
+                <h3 class="home--hosting-offers-caption"><span class="home--hosting-offers-bold">Shared</span> Hosting</h3>
+                <p class="home--hosting-offers-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut corporis numquam, reiciendis, eveniet praesentium!</p>
+                <div class="home--hosting-offers-try">
+                    <div class="home--hosting-offers-try-inscr">Yearle From $39</div>
+                    <div class="home--hosting-offers-try-button">
+                        <img src="img/icons/arrow_in_circle-red.svg" alt="Try">
+                    </div>
+                </div>
+            </div>
+            <div class="home--hosting-offers-vps col-12 col-xl">
+                <h3 class="home--hosting-offers-caption"><span class="home--hosting-offers-bold">VPS</span> Hosting</h3>
+                <p class="home--hosting-offers-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut corporis numquam, reiciendis, eveniet praesentium!</p>
+                <div class="home--hosting-offers-try">
+                    <div class="home--hosting-offers-try-inscr">Monthly From $60</div>
+                    <div class="home--hosting-offers-try-button">
+                        <img src="img/icons/arrow_in_circle-orange.svg" alt="Try">
+                    </div>
+                </div>
+            </div>
+            <div class="home--hosting-offers-dedicated col-12 col-xl">
+                <h3 class="home--hosting-offers-caption"><span class="home--hosting-offers-bold">Dedicated</span> Server</h3>
+                <p class="home--hosting-offers-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut corporis numquam, reiciendis, eveniet praesentium!</p>
+                <div class="home--hosting-offers-try">
+                    <div class="home--hosting-offers-try-inscr">Monthly From $209</div>
+                    <div class="home--hosting-offers-try-button">
+                        <img src="img/icons/arrow_in_circle-yellow.svg" alt="Try">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home--advantages container-fluid">
+        <div class="home--advantages-caption row justify-content-center">
+            <h2>Advantages of Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laborum, neque aliquid veritatis qui officia.</p>
+        </div>
+        <div class="home--advantages-content row justify-content-center align-items-center">
+            <div class="home--advantages-left col">
+                <div class="home--advantages-left-perfomance">
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">High Perfomance</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                    <div class="home--advantages-img"><img src="img/icons/home__high_perfomance.svg" alt="" class="home--advantages-img-content"></div>
+                </div>
+                <div class="home--advantages-left-buckups">
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Everyday Buckups</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                    <div class="home--advantages-img"><img src="img/icons/everyday_backups.svg" alt="" class="home--advantages-img-content"></div>
+                </div>
+                <div class="home--advantages-left-support">
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Great Support</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                    <div class="home--advantages-img"><img src="img/icons/home__great_support.svg" alt="" class="home--advantages-img-content"></div>
+                </div>
+            </div>
+            <div class="home--advantages-server col">
+                <img src="img/pictures/server.png" alt="" class="home--advantages-server-content">
+            </div>
+            <div class="home--advantages-right col">
+                <div class="home--advantages-right-encryption">
+                    <div class="home--advantages-img"><img src="img/icons/data_encryption.svg" alt="" class="home--advantages-img-content"></div>
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Data Encryption</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                </div>
+                <div class="home--advantages-right-analysis">
+                    <div class="home--advantages-img"><img src="img/icons/data_analysis.svg" alt="" class="home--advantages-img-content"></div>
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Data Analysis</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                </div>
+                <div class="home--advantages-right-protection">
+                    <div class="home--advantages-img"><img src="img/icons/data_protection.svg" alt="" class="home--advantages-img-content"></div>
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Data Protection</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home--advantages-responsive">
+                <div class="home--advantages-left-perfomance">
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">High Perfomance</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                    <div class="home--advantages-img"><img src="img/icons/home__high_perfomance.svg" alt="" class=home--advantages-img-content"></div>
+                </div>
+        <div class="home--advantages-right-encryption">
+                    <div class="home--advantages-img"><img src="img/icons/data_encryption.svg" alt="" class="home--advantages-img-content"></div>
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Data Encryption</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                </div>
+        <div class="home--advantages-left-buckups">
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Everyday Buckups</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                    <div class="home--advantages-img"><img src="img/icons/everyday_backups.svg" alt="" class="home--advantages-img-content"></div>
+                </div>
+        <div class="home--advantages-right-analysis">
+                    <div class="home--advantages-img"><img src="img/icons/data_analysis.svg" alt="" class="home--advantages-img-content"></div>
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Data Analysis</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                </div>
+        <div class="home--advantages-left-support">
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Great Support</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                    <div class="home--advantages-img"><img src="img/icons/home__great_support.svg" alt="" class="home--advantages-img-content"></div>
+                </div>
+        <div class="home--advantages-right-protection">
+                    <div class="home--advantages-img"><img src="img/icons/data_protection.svg" alt="" class="home--advantages-img-content"></div>
+                    <div class="home--advantages-wrap">
+                        <h3 class="home--advantages-subcaption">Data Protection</h3>
+                        <p class="home--advantages-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum.</p>
+                    </div>
+                </div>
+         </div>
+    </section>
+
+    <section class="home--reviews">
+        <div class="home--reviews-content container-fluid align-items-center">
+            <div class="home--reviews-caption row justify-content-center">
+                <h2>Customer Reviews</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum laudantium molestias quia voluptas ipsum asperiores, quasi temporibus facere?</p>
+            </div>
+            <div class="home--reviews-block row">
+                <div class="home--reviews-review col-12 col-xl justify-self-center">
+                    <div class="home--reviews-review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus omnis placeat quasi, repellat sint rerum.</div>
+                    <div class="home--reviews-review-img"><img src="img/icons/customer_circle.svg" alt="" class="home--reviews-review-img-content"></div>
+                    <div class="home--reviews-review-name">David Cherednik</div>
+                    <a href="https://davidcherednik.github.io" class="home--reviews-review-link" target="_blank">davidcherednik.github.io</a>
+                </div>
+                <div class="home--reviews-review col-12 col-xl justify-self-center">
+                    <div class="home--reviews-review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus omnis placeat quasi, repellat sint rerum.</div>
+                    <div class="home--reviews-review-img"><img src="img/icons/customer_circle.svg" alt="" class="home--reviews-review-img-content"></div>
+                    <div class="home--reviews-review-name">David Cherednik</div>
+                    <a href="https://davidcherednik.github.io" class="home--reviews-review-link" target="_blank">davidcherednik.github.io</a>
+                </div>
+                <div class="home--reviews-review col-12 col-xl justify-self-center">
+                    <div class="home--reviews-review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus omnis placeat quasi, repellat sint rerum.</div>
+                    <div class="home--reviews-review-img"><img src="img/icons/customer_circle.svg" alt="" class="home--reviews-review-img-content"></div>
+                    <div class="home--reviews-review-name">David Cherednik</div>
+                    <a href="https://davidcherednik.github.io" class="home--reviews-review-link" target="_blank">davidcherednik.github.io</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home--pricing container-fluid">
+        <div class="home--pricing-caption row justify-content-center">
+            <h2>Our Pricing Plans</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id neque tenetur, facilis eos nihil at, possimus cum sit!</p>
+        </div>
+        <div class="home--pricing-content row justify-content-center ">
+            <div class="home--pricing-choice col-3">
+                <div class="home--pricing-choice-stub home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">Shared</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Hosting</p>
+                </div>
+                <div class="home--pricing-choice-caption-content">
+                    <h3 class="home--pricing-choice-caption">Make a Choice</h3>
+                    <p class="home--pricing-choice-descr">Lorem ipsum dolor.</p>
+                </div>
+                <div class="home--pricing-choice-content">
+                    <ul class="home--pricing-choice-list home--pricing-list">
+                        <li>Hardware</li>
+                        <li>Memory</li>
+                        <li>HDD</li>
+                        <li>Channel</li>
+                        <li>Email</li>
+                        <li>Monitoring</li>
+                        <li>Support</li>
+                        <li>Operation System</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="home--pricing-offer col-3">
+                <div class="home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">Shared</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Hosting</p>
+                </div>
+                <div class="home--pricing-offer-price">
+                    <div class="home--pricing-offer-price-main">$39</div>
+                    <div class="home--pricing-offer-price-subprice">
+                        <div class="home--pricing-offer-price-subprice-content">.99</div>
+                        <div class="home--pricing-offer-price-subprice-from">Yearly From</div>
+                    </div>
+                </div>
+                <div class="home--pricing-offer-content">
+                    <ul class="home--pricing-offer-list home--pricing-list">
+                        <li>Intel i3 2.33</li>
+                        <li>128Mb Ram</li>
+                        <li>1GB storage</li>
+                        <li>3GB bandwidth</li>
+                        <li>10 Email Addresses</li>
+                        <li>24/7</li>
+                        <li>24/7</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="home--pricing-offer-button">
+                    <div class="home--pricing-offer-button-content button">Choose a Plan</div>
+                </div>
+            </div>
+            <div class="home--pricing-offer col-3">
+                <div class="home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">VPS</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Hosting</p>
+                </div>
+                <div class="home--pricing-offer-price">
+                    <div class="home--pricing-offer-price-main">$60</div>
+                    <div class="home--pricing-offer-price-subprice">
+                        <div class="home--pricing-offer-price-subprice-content">.00</div>
+                        <div class="home--pricing-offer-price-subprice-from">Monthly From</div>
+                    </div>
+                </div>
+                <div class="home--pricing-offer-content">
+                    <ul class="home--pricing-offer-list home--pricing-list">
+                        <li>Intel i5 2.7</li>
+                        <li>512Mb Ram</li>
+                        <li>10GB storage</li>
+                        <li>5GB bandwidth</li>
+                        <li>50 Email Addresses</li>
+                        <li>24/7</li>
+                        <li>24/7</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="home--pricing-offer-button">
+                    <div class="home--pricing-offer-button-content button">Choose a Plan</div>
+                </div>
+            </div>
+            <div class="home--pricing-offer col-3">
+                <div class="home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">Dedicated</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Servers</p>
+                </div>
+                <div class="home--pricing-offer-price">
+                    <div class="home--pricing-offer-price-main">$209</div>
+                    <div class="home--pricing-offer-price-subprice">
+                        <div class="home--pricing-offer-price-subprice-content">.00</div>
+                        <div class="home--pricing-offer-price-subprice-from">Monthly From</div>
+                    </div>
+                </div>
+                <div class="home--pricing-offer-content">
+                    <ul class="home--pricing-offer-list home--pricing-list">
+                        <li>Intel i7 3.2</li>
+                        <li>2GB Ram</li>
+                        <li>100GB storage</li>
+                        <li>15GB bandwidth</li>
+                        <li>Free Email Addresses</li>
+                        <li>24/7</li>
+                        <li>24/7</li>
+                        <li>Linux</li>
+                    </ul>
+                </div>
+                <div class="home--pricing-offer-button">
+                    <div class="home--pricing-offer-button-content button">Choose a Plan</div>
+                </div>
+            </div>
+        </div>
+        <div class="home--pricing-content-responsive row justify-content-center">
+             <div class="home--pricing-offer col-12">
+                <div class="home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">Shared</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Hosting</p>
+                </div>
+                <div class="home--pricing-offer-price">
+                    <div class="home--pricing-offer-price-main">$39</div>
+                    <div class="home--pricing-offer-price-subprice">
+                        <div class="home--pricing-offer-price-subprice-content">.99</div>
+                        <div class="home--pricing-offer-price-subprice-from">Yearly From</div>
+                    </div>
+                </div>
+                <div class="home--pricing-offer-content">
+                    <ul class="home--pricing-offer-list home--pricing-list">
+                        <li class="home--pricing-accordion-caption">Hardware</li>
+                        <li class="home--pricing-accordion-content">Intel i3 2.33</li>
+                        <li class="home--pricing-accordion-caption">Memory</li>
+                        <li class="home--pricing-accordion-content">128Mb Ram</li>
+                        <li class="home--pricing-accordion-caption">HDD</li>
+                        <li class="home--pricing-accordion-content">1GB storage</li>
+                        <li class="home--pricing-accordion-caption">Channel</li>
+                        <li class="home--pricing-accordion-content">3GB bandwidth</li>
+                        <li class="home--pricing-accordion-caption">Email</li>
+                        <li class="home--pricing-accordion-content">10 Email Addresses</li>
+                        <li class="home--pricing-accordion-caption">Monitoring</li>
+                        <li class="home--pricing-accordion-content">24/7</li>
+                        <li class="home--pricing-accordion-caption">Support</li>
+                        <li class="home--pricing-accordion-content">24/7</li>
+                        <li class="home--pricing-accordion-caption">Operation System</li>
+                        <li class="home--pricing-accordion-content">Linux</li>
+                    </ul>
+                </div>
+                <div class="home--pricing-offer-button">
+                    <div class="home--pricing-offer-button-content button">Choose a Plan</div>
+                </div>
+            </div>
+            <div class="home--pricing-offer col-12">
+                <div class="home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">VPS</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Hosting</p>
+                </div>
+                <div class="home--pricing-offer-price">
+                    <div class="home--pricing-offer-price-main">$60</div>
+                    <div class="home--pricing-offer-price-subprice">
+                        <div class="home--pricing-offer-price-subprice-content">.00</div>
+                        <div class="home--pricing-offer-price-subprice-from">Monthly From</div>
+                    </div>
+                </div>
+                <div class="home--pricing-offer-content">
+                    <ul class="home--pricing-offer-list home--pricing-list">
+                        <li class="home--pricing-accordion-caption">Hardware</li>
+                        <li class="home--pricing-accordion-content">Intel i5 2.7</li>
+                        <li class="home--pricing-accordion-caption">Memory</li>
+                        <li class="home--pricing-accordion-content">512Mb Ram</li>
+                        <li class="home--pricing-accordion-caption">HDD</li>
+                        <li class="home--pricing-accordion-content">10GB storage</li>
+                        <li class="home--pricing-accordion-caption">Channel</li>
+                        <li class="home--pricing-accordion-content">5GB bandwidth</li>
+                        <li class="home--pricing-accordion-caption">Email</li>
+                        <li class="home--pricing-accordion-content">50 Email Addresses</li>
+                        <li class="home--pricing-accordion-caption">Monitoring</li>
+                        <li class="home--pricing-accordion-content">24/7</li>
+                        <li class="home--pricing-accordion-caption">Support</li>
+                        <li class="home--pricing-accordion-content">24/7</li>
+                        <li class="home--pricing-accordion-caption">Operation System</li>
+                        <li class="home--pricing-accordion-content">Linux</li>
+                    </ul>
+                </div>
+                <div class="home--pricing-offer-button">
+                    <div class="home--pricing-offer-button-content button">Choose a Plan</div>
+                </div>
+            </div>
+            <div class="home--pricing-offer col-12">
+                <div class="home--pricing-offer-caption">
+                    <h3 class="home--pricing-offer-caption-subcaption">Dedicated</h3>
+                    <p class="home--pricing-offer-caption-subdescr">Servers</p>
+                </div>
+                <div class="home--pricing-offer-price">
+                    <div class="home--pricing-offer-price-main">$209</div>
+                    <div class="home--pricing-offer-price-subprice">
+                        <div class="home--pricing-offer-price-subprice-content">.00</div>
+                        <div class="home--pricing-offer-price-subprice-from">Monthly From</div>
+                    </div>
+                </div>
+                <div class="home--pricing-offer-content">
+                    <ul class="home--pricing-offer-list home--pricing-list">
+                        <li class="home--pricing-accordion-caption">Hardware</li>
+                        <li class="home--pricing-accordion-content">Intel i7 3.2</li>
+                        <li class="home--pricing-accordion-caption">Memory</li>
+                        <li class="home--pricing-accordion-content">2GB Ram</li>
+                        <li class="home--pricing-accordion-caption">HDD</li>
+                        <li class="home--pricing-accordion-content">100GB storage</li>
+                        <li class="home--pricing-accordion-caption">Channel</li>
+                        <li class="home--pricing-accordion-content">15GB bandwidth</li>
+                        <li class="home--pricing-accordion-caption">Email</li>
+                        <li class="home--pricing-accordion-content">Free Email Addresses</li>
+                        <li class="home--pricing-accordion-caption">Monitoring</li>
+                        <li class="home--pricing-accordion-content">24/7</li>
+                        <li class="home--pricing-accordion-caption">Support</li>
+                        <li class="home--pricing-accordion-content">24/7</li>
+                        <li class="home--pricing-accordion-caption">Operation System</li>
+                        <li class="home--pricing-accordion-content">Linux</li>
+                    </ul>
+                </div>
+                <div class="home--pricing-offer-button">
+                    <div class="home--pricing-offer-button-content button">Choose a Plan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home--support container-fluid">
+        <div class="home--support-content row justify-content-center">
+            <div class="home--support-main col col-xl-6">
+                <div class="home--support-caption">
+                    <h2 class="home--support-subcaption">Customer Support</h2>
+                    <p class="home--support-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore magni ex, doloremque ad incidunt. Porro error eius ipsum voluptates, cum maxime.</p>
+                </div>
+                <form action="#" class="home--support-form container" id="home--support-form">
+                    <div class="home--support-form-inputs row">
+                        <input type="text" class="home--support-form-name col-12 col-sm" required="" placeholder="Your Name">
+                        <input type="email" name="" id="" class="home--support-form-email col-12 col-sm" required="" placeholder="Email Address">
+                    </div>
+                    <textarea class="home--support-form-question col" required="" placeholder="Your Question"></textarea>
+                </form>
+                <button class="home--support-submit button" form="home--support-form">
+                    Send Question
+                </button>
+                <a href="javascript:void(0)" class="home--support-chat">Or Use Live Chat?</a>
+            </div>
+            <div class="home--support-img col-6">
+                <img src="img/pictures/hands_on_notebook.png" alt="" class="home--support-img-content">
+            </div>
+        </div>
+    </section>
+
+    <section class="home--happy-clients container-fluid">
+        <div class="home--happy-clients-caption row align-items-end">
+            <div class="home--happy-clients-caption-content col col-md-7 col-lg-6">
+                <h2 class="home--happy-clients-subcaption">Our Happy Clients</h2>
+                <p class="home--happy-clients-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit a ut iure facere, beatae voluptatum dolore dolorum maiores ipsum veniam hic!</p>
+            </div>
+            <div class="home--happy-clients-wrap owl-theme col-12 col-md-5 col-lg-6">
+                <div class="owl-dots" id="home--custom-dots"></div>
+            </div>
+        </div>
+        <div class="home--happy-clients-carousel owl-carousel owl-theme row justify-content-center">
+            <div class="item"><img src="img/pictures/logo/1.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/2.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/3.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/4.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/5.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/6.png" alt=""></div>
+
+            <div class="item"><img src="img/pictures/logo/1.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/2.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/3.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/4.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/5.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/6.png" alt=""></div>
+
+            <div class="item"><img src="img/pictures/logo/1.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/2.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/3.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/4.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/5.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/6.png" alt=""></div>
+
+            <div class="item"><img src="img/pictures/logo/1.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/2.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/3.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/4.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/5.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/6.png" alt=""></div>
+
+            <div class="item"><img src="img/pictures/logo/1.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/2.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/3.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/4.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/5.png" alt=""></div>
+            <div class="item"><img src="img/pictures/logo/6.png" alt=""></div>
+        </div>
+    </section>
+
+    <section class="follow container-fluid">
+        <div class="follow-content row">
+            <div class="follow-caption col-12 col-xl-7">
+                <h2 class="follow-subcaption">Follow Us in Social Networks</h2>
+                <p class="follow-subdescr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dicta at voluptate ullam, nam necessitatibus numquam. Possimus, omnis explicabo nemo architecto. Optio, praesentium nesciunt.</p>
+            </div>
+            <div class="follow-social col-12 col-xl-5">
+                <a href="https://facebook.com" target="_blank"><img src="img/icons/facebook.svg" alt="" class="follow-social-content"></a>
+                <a href="https://twitter.com" target="_blank"><img src="img/icons/twitter.svg" alt="" class="follow-social-content"></a>
+                <a href="https://google.com" target="_blank"><img src="img/icons/google-plus.svg" alt="" class="follow-social-content"></a>
+                <a href="https://instagram.com" target="_blank"><img src="img/icons/pinterest.svg" alt="" class="follow-social-content"></a>
+                <br>
+                <a href="https://instagram.com" target="_blank"><img src="img/icons/instagram.svg" alt="" class="follow-social-content"></a>
+                <a href="https://telegram.org" target="_blank"><img src="img/icons/telegram.svg" alt="" class="follow-social-content"></a>
+                <a href="https://flickr.com" target="_blank"><img src="img/icons/flickr.svg" alt="" class="follow-social-content"></a>
+                <a href="https://dribbble.com" target="_blank"><img src="img/icons/dribbble.svg" alt="" class="follow-social-content"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer container-fluid">
+        <div class="main-footer-content row">
+            <div class="main-footer-company col-12 col-xl-4">
+                <div class="main-footer-company-logo">
+                    <a href="index.html">
+                        <img src="img/icons/logo.svg" alt="" class="main-footer-company-logo-img">
+                        <span class="main-footer-company-logo-text">Globals</span>
+                    </a>
+                </div>
+                <div class="main-footer-company-descr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, molestiae praesentium ad ipsam placeat? Itaque, sapiente! Repudiandae quis officiis sapiente. Voluptatum.
+                    <a href="javascript:void(0)" class="main-footer-company-descr-link">Read More...</a>
+                </div>
+                <div class="main-footer-company-info">
+                    <div class="main-footer-company-info-address">
+                        <div class="main-footer-company-info-img"><img src="img/icons/address.svg" alt="" class="main-footer-company-info-img-content"></div>
+                        <div class="main-footer-company-info-wrap">
+                            <h3 class="main-footer-company-info-caption">Address:</h3>
+                            <p class="main-footer-company-info-descr">Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="main-footer-company-info-phone">
+                        <div class="main-footer-company-info-img"><img src="img/icons/phone_numbers.svg" alt="" class="main-footer-company-info-img-content"></div>
+                        <div class="main-footer-company-info-wrap">
+                            <h3 class="main-footer-company-info-caption">Phone Numbers:</h3>
+                            <ul class="main-footer-company-info-phone-list">
+                                <li><span>+72818728293</span> - Phone Number</li>
+                                <li><span>+72818728293</span> - Phone Number</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-footer-company-info-email">
+                        <div class="main-footer-company-info-img"><img src="img/icons/email_address.svg" alt="" class="main-footer-company-info-img-content"></div>
+                        <div class="main-footer-company-info-wrap">
+                            <h3 class="main-footer-company-info-caption">Email Address</h3>
+                            <p class="main-footer-company-info-descr">david.cherednik@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer-hosting col-sm-6 col-xl-2">
+                <h2 class="main-footer-caption">Hosting</h2>
+                <ul class="main-footer-hosting-list">
+                    <a href="javascript:void(0)" class="main-footer-list-close">x</a>
+                    <div class="main-footer-list-wrap">
+                        <li><a href="javascript:void(0)">Web Hosting</a></li>
+                        <li><a href="javascript:void(0)">Reseller Hosting</a></li>
+                        <li><a href="javascript:void(0)">VPS Hosting</a></li>
+                        <li><a href="javascript:void(0)">Dedicated Servers</a></li>
+                        <li><a href="javascript:void(0)">Application Hosting</a></li>
+                        <li><a href="javascript:void(0)">Windows Hosting</a></li>
+                        <li><a href="javascript:void(0)">Register Domains</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="main-footer-links col-sm-6 col-xl-2">
+                <h2 class="main-footer-caption">Userful Links</h2>
+                <ul class="main-footer-links-list">
+                    <a href="javascript:void(0)" class="main-footer-list-close">x</a>
+                    <div class="main-footer-list-wrap">
+                        <li><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">User Account</a></li>
+                        <li><a href="javascript:void(0)">Help Center</a></li>
+                        <li><a href="javascript:void(0)">Support Form</a></li>
+                        <li><a href="javascript:void(0)">Careers</a></li>
+                        <li><a href="javascript:void(0)">Globals Blog</a></li>
+                        <li><a href="javascript:void(0)">Terms of Use</a></li>
+                        <li><a href="javascript:void(0)">Contacts</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="main-footer-subscribe col-12 col-xl-4">
+                <h2 class="main-footer-caption">Email Newsletters</h2>
+                <p class="main-footer-subscribe-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis explicabo natus culpa, sequi accusantium dignissimos.</p>
+                <form action="#" class="main-footer-subscribe-form">
+                    <input type="text" id="main-footer-subscribe-name" class="main-footer-subscribe-name" required="" placeholder="Full Name">
+                    <input type="email" id="main-footer-subscribe-email" class="main-footer-subscribe-email" required="" placeholder="Email Address">
+                    <button class="main-footer-subscribe-submit button">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="main-footer-up">
+            <a href="#"><img src="img/icons/up-arrow.svg" alt=""></a>
+        </div>
+        <div class="main-footer-subfooter row align-items-center">
+            <div class="main-footer-subfooter-content">
+                © 2k18 Space Hosting <a href="index.html">Globals</a>&#8194;/&#8194;<div class="main-footer-subfooter-block"></div>Designed
+                by <a href="https://davidcherednik.github.io" target="_blank">David Cherednik</a>&#8194;/&#8194;<div class="main-footer-subfooter-block"></div>Only for <a href="https://davidcherednik.github.io" target="_blank">Me</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/scripts.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="libs/select2/dist/select2.min.js"></script>
+    <!-- OwlCarousel -->
+    <script src="libs/owlcarousel/dist/owl.carousel.min.js"></script>
+
+</body>
+
+</html>

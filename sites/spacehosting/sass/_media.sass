@@ -1,0 +1,607 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width: 1500px)
+	.home-header-caption
+		font-size: 74pt !important
+	.header-inscr
+		font-size: 32pt !important
+	
+	.home--check-domain
+		padding: 0 5vw !important
+
+	.home--hosting-pluses
+		padding: 10vh 10vw !important
+		&-caption
+			font-size: 24pt !important
+			// font-weight: 600 !important //Xmmmmmm...
+			line-height: 1.3 !important
+
+	.home--pricing
+		&-choice
+			&-caption
+				font-size: 25pt !important
+		&-offer
+			&-price
+				&-main 
+					font-size: 50pt !important
+				&-subprice-content
+					font-size: 25pt !important
+				&-subprice-from
+					font-size: 10pt !important
+
+	.home--hosting-offers
+		.home--hosting-offers-shared, 
+		.home--hosting-offers-vps,
+		.home--hosting-offers-dedicated
+			padding: 7vh 3vw !important
+		&-caption
+			line-height: 1.2
+			margin-bottom: 3vh !important
+		&-try
+			width: 100% !important
+			&-button
+				img
+					transform: scale(1) rotate(90deg) translateY(80%)  !important
+
+	.home--advantages
+		padding: 10vh 7vw !important
+
+	.home--reviews
+		&-caption
+			margin-bottom: 10vh !important
+			p
+				width: 100% !important
+		&-content
+			padding: 10vh 10vw !important
+		&-review-img
+			padding-top: 7vh !important
+			&-content
+				width: 10% !important
+		&-review
+			margin-bottom: 7vh !important
+			&:last-child
+				margin-bottom: 0 !important
+
+	.follow
+		&-subdescr
+			width: 100% !important
+		&-social
+			white-space: nowrap //AAAAAA
+		a
+			margin-right: .1em !important
+			img
+				width: 12% !important
+		&-subcaption
+			white-space: nowrap !important //AAAA
+			font-size: 42pt !important
+
+
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.main-header
+		overflow-y: auto
+		.home-header-content
+			max-height: 100% !important
+		.header-descr-content
+			text-align: center !important
+			display: inline-block !important
+			width: 100% !important
+			h1
+				text-align: center !important
+				display: inline-block !important
+				width: 100% !important
+			h2
+				text-align: center !important
+				display: inline-block !important
+				width: 100% !important
+	.header-img
+		display: none
+	.header-content
+		padding: 15vh 10vw !important
+	.header-button, .button
+		border-radius: 30px !important
+		padding: 2vh 4vw !important
+
+	.home--check-domain
+		padding-top: 5vh !important
+		&-check
+			text-align: center
+		&-button
+			padding: 1.5vh 1.5vw !important
+		&-img
+			order: 2 !important
+			text-align: center
+
+	.home--hosting-pluses
+		// padding: 10vh 10vw
+		&-button
+			padding: 1.5vh 2vw !important
+	.home--hosting-plus
+		margin-bottom: 7vh !important
+		&:nth-child(5), &:nth-child(6)
+			margin-bottom: 0 !important
+
+	.home--hosting-offers
+		.home--hosting-offers-shared, 
+		.home--hosting-offers-vps,
+		.home--hosting-offers-dedicated
+			padding: 5vh 5vw !important
+		&-try-inscr
+			border-radius: 40px !important
+		&-try-button
+			img
+				transform: scale(0.35) rotate(90deg) translateY(190%) !important
+
+	.home--advantages
+		&-server
+			display: none
+		&-left, &-right
+			// display: none
+		
+		&-responsive
+			// display: block
+
+	.home--pricing
+		padding: 7vh 5vw 10vh 5vw !important
+		&-offer-button-content
+			font-size: 14pt !important
+			white-space: nowrap
+		&-caption
+			padding: 0 10vh !important
+
+	.home--support
+		padding: 7vh 10vw !important
+		&-subcaption
+			font-size: 38pt !important
+		&-img
+			display: none !important
+		&-submit
+			font-size: 16pt !important
+
+	.home--happy-clients
+		&-subcaption
+			white-space: nowrap //Dangerous!
+
+	.follow
+		&-subcaption
+			font-size: 46pt !important
+		&-caption
+			text-align: center !important
+			margin-bottom: 3vh !important
+		&-social
+			white-space: normal !important
+			position: relative !important
+			a
+				margin-right: .5em !important
+				img
+					width: 10% !important
+
+	.main-footer
+		&-list-close
+			display: block !important
+		&-caption:nth-child(1), &-caption:nth-child(2)
+			cursor: pointer
+		&-hosting-list, &-links-list
+			height: 0
+			margin-bottom: 0
+		&-company-info
+			&-address, &-phone, &-email
+				margin-bottom: 3vh !important
+		&-up
+			a
+				img
+					width: 7% !important
+
+// ≥992px
++media-breakpoint-down(md)
+	.home--check-domain
+		&-caption
+			font-size: 42pt !important
+
+	.home--hosting-plus
+		&:nth-child(5)
+			margin-bottom: 7vh !important
+	.home--hosting-pluses
+		&-caption
+			font-size: 28pt !important
+		&-img
+			padding-right: 2vw !important
+
+	.home--hosting-offers
+		&-try-button
+			img
+				transform: scale(0.4) rotate(90deg) translateY(160%) !important
+
+	.home--advantages
+		&-content
+			display: none !important
+		&-responsive 
+			display: block !important
+		&-caption
+			margin-bottom: 10vh !important
+			// &:before
+			// 	content: ''
+			// 	position: absolute
+			// 	bottom: 0
+			// 	right: 0
+			// 	left: 0
+			// 	width: 50%
+			// 	margin: auto
+			// 	border-bottom: 1px solid red
+
+
+	.home--pricing
+		padding: 0 !important
+		padding-top: 7vh !important
+		&-caption
+			margin-bottom: 7vh !important
+			h2
+				font-size: 38pt !important
+				line-height: 1.2
+				padding-bottom: 1vh !important
+		&-choice-caption
+			font-size: 21pt !important
+		&-choice-descr
+			font-size: 12pt !important
+		li
+			font-size: 14pt !important
+		&-offer-price
+			// padding: 1vh 0
+			&-main
+		&-offer-price-main
+			font-size: 55pt !important
+		&-offer-price-subprice
+			&-content
+				font-size: 28pt !important
+			&-from
+				font-size: 12pt !important
+		&-offer-button-content
+			width: 60% !important
+		&-content
+			display: none
+		&-content-responsive
+			display: block !important
+		&-offer-caption
+			&-subcaption
+				font-size: 36pt !important
+
+	.home--happy-clients
+		&-subcaption
+			font-size: 38pt !important
+
+	.follow
+		&-subcaption
+			white-space: normal !important
+			font-size: 38pt !important
+
+
+
+// ≥768px
++media-breakpoint-down(sm)
+	.home-header-caption
+		font-size: 70pt !important
+	.header-inscr
+		font-size: 30pt !important
+	.header-button, .button
+		// font-size: 20pt !important //Maybe uncomment??
+
+	.home--check-domain
+		padding-top: 7vh !important
+		padding-bottom: 7vh !important
+		&-caption
+			font-size: 36pt !important
+			line-height: 1.2
+		&-img
+			display: none
+		&-form
+			margin-bottom: 3vh !important
+
+	.home--hosting-pluses
+		&-img
+			// transform: scale(0.8) !important
+
+	.home--hosting-offers
+		&-try-button
+			img
+				transform: scale(0.45) rotate(90deg) translateY(150%) !important
+
+	.home--advantages
+		&-caption
+			h2
+				font-size: 42pt !important
+				line-height: 1.2 !important
+				padding-bottom: 1vh !important
+
+	.home--reviews
+		&-review-img
+			&-content
+				width: 15% !important
+
+	.home--support
+		&-form
+			margin-right: 0 !important
+			margin-left: 0 !important
+
+	.home--happy-clients
+		&-caption
+			text-align: center
+		.home--happy-clients-wrap
+			text-align: center
+			margin: auto
+
+	.main-footer
+		&-up>a>img
+			width: 10% !important
+		&-company
+			&-info-img
+				flex: 10% !important
+			&-info-wrap
+				flex: 90% !important
+
+		&-subfooter
+			.main-footer-subfooter-block
+				&:nth-child(2)
+					display: block
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	.home-header-caption
+		// white-space: nowrap
+		font-size: 60pt !important
+	.header-inscr
+		font-size: 28pt !important
+	.header-content
+		// background-image: none !important
+		background-position: center left !important
+		padding: 10vh 10vw !important
+	.header-button, .button
+		padding: 2vh 7vw !important
+		font-size: 18pt !important
+
+	.home--check-domain
+		&-button
+			display: block
+			margin-right: auto
+			margin-left: auto
+		&-form
+			flex-direction: column
+			margin-bottom: 5vh !important
+		&-address
+			margin-bottom: 3vh
+			text-align: center
+		.select2-container
+			width: 100% !important
+			margin-left: 0 !important
+		&-button
+			margin-bottom: 3vh !important
+			// font-size: 14pt !important
+
+	.home--hosting-pluses
+		padding: 7vh 10vw !important
+		&-caption
+			font-size: 22pt !important
+			// white-space: nowrap
+		&-button
+			padding: 1.5vh 5vw !important
+			font-size: 16pt !important
+
+	.home--hosting-offers
+		&-try-button
+			img
+				transform: scale(0.6) rotate(90deg) translateY(130%) !important
+
+	.home--reviews
+		&-caption
+			h2
+				font-size: 38pt !important
+
+	.home--support
+		&-caption
+			margin-bottom: 5vh !important
+		&-submit
+			display: block
+			margin: 0 auto !important
+			margin-top: 3vh !important
+			margin-bottom: 1vh !important
+			// font-size: 14pt !important
+			padding: 1vh 5vw !important
+		&-chat
+		&-main
+			text-align: center
+		&-form
+			input
+				margin-right: 0 !important
+				margin-left: 0 !important
+				&:first-child
+					margin-bottom: 1vh !important
+
+	.home--happy-clients
+		&-subcaption
+			white-space: normal !important
+			font-size: 28pt !important
+		&-carousel
+			margin: auto !important
+		#home--custom-dots
+			text-align: center !important
+
+	.follow
+		&-subcaption
+			line-height: 1.3
+			font-size: 28pt !important
+			margin-bottom: 1vh !important
+		&-social
+			text-align: center
+			br
+				display: block !important
+			a
+				&:nth-child(4), &:last-child
+					margin-right: 0 !important
+				img
+					width: 20% !important
+					&:nth-child(5), &:nth-child(6), &:nth-child(7), &:last-child
+						margin-top: 1vh
+
+	.main-footer
+		&-list-close
+			font-size: 12vw	 !important
+		&-list-wrap>li>a
+			font-size: 16pt !important
+		&-subfooter
+			.main-footer-subfooter-block
+				display: block
+
+
+
+
+	@media only screen and (max-width: 415px)
+		.home--hosting-offers
+				&-try-button
+					img
+						transform: scale(1.05) rotate(90deg) translateY(90%) !important
+
+		.home--advantages
+			padding: 7vh 5vw 3vh 5vw !important
+			&-caption
+				margin-bottom: 5vh !important
+				h2
+					font-size: 38pt !important
+				p
+					padding: 0 5vw !important
+
+	.home--reviews
+		&-caption
+			h2
+				font-size: 30pt !important
+				font-weight: 600 !important //??
+		&-review-text
+			padding: 3vh 3vw !important
+		&-review-img
+			&-content
+				width: 25% !important
+
+	.home--support
+		&-subcaption
+			font-size: 28pt !important
+			white-space: nowrap !important
+			// font-weight: 600 !important
+
+	.home--happy-clients
+		padding: 5vh 7vw !important
+		padding-bottom: 7vh !important
+
+	.follow
+		padding: 5vh 5vw !important
+
+	.main-footer
+		&-company-logo-img
+			width: 20% !important
+		&-content
+			padding: 5vh 5vw !important
+			padding-bottom: 0 !important
+		&-subscribe-submit
+			font-size: 14pt !important
+
+
+@media only screen and (max-width: 360px)
+	.home--hosting-pluses
+		padding: 10vh 9vw !important
+		&-img
+			padding-right: .5vw !important
+			&-content
+				transform: scale(0.7)
+	.home--hosting-plus
+		padding: 0
+
+	.home--reviews
+		&-caption
+			p
+				padding: 0 3vw !important
+			h2
+				font-size: 28pt !important
+
+	.home--support
+		&-subcaption
+			font-size: 24pt !important
+		&-submit
+			padding: 1vh 7vw !important
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+
+
+
+
+// OLD VARIANT, CAN WORK WITH IT WITHOUT BS4
+// /*==========  Desktop First  ==========*/
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (max-width : 1200px)
+// 	/**/
+
+
+// /* Medium Devices, Desktops */
+// @media only screen and (max-width : 992px)
+// 	/**/
+
+
+// /* Small Devices, Tablets */
+// @media only screen and (max-width : 768px)
+// 	/**/
+
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (max-width : 480px)
+// 	/**/
+
+
+// /* Custom, iPhone Retina */
+// @media only screen and (max-width : 320px)
+// 	/**/
+
+
+// /*==========  Mobile First  ==========*/
+
+// /* Custom, iPhone Retina */
+// @media only screen and (min-width : 320px)
+// 	/**/
+
+
+// /* Extra Small Devices, Phones */
+// @media only screen and (min-width : 480px)
+// 	/**/
+
+
+// /* Small Devices, Tablets */
+// @media only screen and (min-width : 768px)
+// 	/**/
+
+
+// /* Medium Devices, Desktops */
+// @media only screen and (min-width : 992px)
+// 	/**/
+
+
+// /* Large Devices, Wide Screens */
+// @media only screen and (min-width : 1200px)
+// 	/**/

@@ -1,0 +1,1434 @@
+
+@import "fonts"
+@import "libs"
+@import "vars"
+
+body, html
+	position: relative
+	margin: 0
+	padding: 0
+	font-family: Arial
+	font-size: 1em
+	opacity: 1
+	overflow-x: hidden
+	min-width: 320px
+	&:not(.main-menu)
+		// filter: blur(3px)
+
+a:hover, a:active, a:visited
+	background-color: inherit
+
+.button
+	margin-top: 3vh
+	display: inline-block //For width on content
+	cursor: pointer
+	color: #fff
+	background-color: $black-button-bg
+	padding: 1vh 1vw
+	border-radius: 20px
+	transition: $default-animation
+	outline: none
+	border: none
+	&:hover
+		filter: saturate(90%)
+		outline: none
+		border: none
+	&:active
+		filter: saturate(80%)
+		outline: none
+		border: none
+
+
+//Generalized
+.main-header
+	padding: 0
+	min-height: 100vh
+	overflow-x: hidden
+	.sticky-navbar
+		position: fixed
+		top: 0
+		z-index: 10
+	.main-navbar
+		padding: 0 10vw
+		background-color: #222629
+		user-select: none
+		.navbar-main-menu-button
+			a
+				.navbar-main-menu-icon
+					width: 30%
+					height: 30%
+					filter: invert(100%) //Making icon white :)
+					transition: $default-animation
+					&:hover
+						transform: scale(1.1)
+		.navbar-logo
+			.navbar-logo-content
+				text-decoration: none
+				color: #fff
+				white-space: nowrap
+				transition: $default-animation
+				.navbar-logo-img
+					width: 15%
+					height: 15%
+				.navbar-logo-inscr
+					font-family: "RobotoBold"
+					font-size: 36pt
+					font-weight: bolder
+					font-style: italic
+					vertical-align: middle
+				&:hover
+					filter: invert(10%)
+		.navbar-links
+			list-style: none
+			user-select: none
+			font-family: $default-font
+			font-size: 14pt
+			font-weight: 400
+			margin: 0
+			// padding: 0 !important
+			li
+				display: inline-block
+				margin-right: $gutter
+				position: relative
+				padding-top: 5vh
+				padding-bottom: 5vh
+				a
+					text-decoration: none
+					color: #9699a6
+					position: relative
+					transition: $default-animation
+					&:hover
+						color: #00bff3 !important
+		.navbar-navigation
+			text-align: center
+			a
+				.navbar-navigation-img
+					height: 30%
+					width: 30%
+					// cursor: pointer
+		.navbar-internal-operations
+			text-align: right
+			position: relative
+			padding: 0
+			margin-right: 15px
+			margin-left: 15px //But what about responsive??
+			.navbar-internal-operations-three-dots
+				text-decoration: none
+				color: #fff
+				font-size: 30pt
+				font-weight: bolder
+				transition: $default-animation
+				&:hover
+					filter: invert(10%)
+			.navbar-internal-operations-list
+				display: none
+				transition: $default-animation
+				z-index: 999 !important
+				position: absolute
+				right: 0
+				width: 170%
+				white-space: nowrap
+				list-style-type: none
+				padding: 0 //Delete padding added by li
+				background-color: #fff
+				li
+					text-align: left
+					padding-bottom: .5vh
+					padding-top: .5vh
+					padding-left: 1em
+					cursor: pointer
+					transition: $default-animation
+					&:before
+						color: #cdcfd7
+						padding-right: .5em
+						font-size: 16pt
+					&:first-child
+						&:before
+							content: '\2709'
+					&:nth-child(2)
+						&:before
+							content: '\2709'
+					&:nth-child(3)
+						&:before
+							content: '\2699'
+					&:nth-child(4)
+						&:before
+							content: '\2699'			
+					&:last-child
+						margin-top: 1vh
+						padding-top: 1vh
+						padding-bottom: 1vh
+						text-transform: uppercase
+						&:before
+							content: '\1f860'
+					&:hover
+						background-color: #292d31
+					a
+						color: #9699a6
+						text-decoration: none
+						background-color: transparent
+						transition: $default-animation
+						// margin-left: 1em
+						font-family: "RobotoRegular"
+						font-size: 14pt
+	.main-menu
+		$main-menu-padding: 4vh 2vw
+		// padding: 5vh 3vw
+		position: fixed
+		overflow-y: scroll
+		top: 0
+		left: 0
+		bottom: 0
+		z-index: 999 !important
+		background-color: #171a1c
+		min-height: 100vh
+		width: 20vw
+		margin: 0
+		display: none
+		// filter: blur(0) !important
+		.main-menu-autor
+			background: url("../img/bg/main-menu-bg.png") center no-repeat
+			background-size: cover
+			padding: $main-menu-padding
+			.main-menu-autor-img
+				img
+					width: 30%
+					height: 30%
+			.main-menu-autor-inscr
+				margin-top: 3vh
+				font-family: "RobotoBold"
+				font-size: 16pt
+				color: #fff
+			.main-menu-autor-email	
+				.select2-container
+					width: 100%	!important	
+				.select2-selection
+					background-color: transparent
+					border: none
+					outline: none
+					.select2-selection__rendered
+						width: 100%
+						color: #34353c
+						line-height: 1.5
+						font-family: "RobotoRegular"
+						font-size: 14pt
+						font-weight: 400
+					.select2-selection__arrow
+						b
+							border-color: #fff transparent transparent transparent
+				.select2-container--open
+					.select2-selection--single
+						.select2-selection__arrow
+							b
+								border-color: transparent transparent #fff transparent 
+		.main-menu-services
+			padding: $main-menu-padding
+			padding-left: 0
+			padding-bottom: 0
+			.main-menu-services-caption
+				font-family: "RobotoRegular"
+				font-size: 24pt
+				color: #fff
+				font-weight: 400
+				margin-bottom: 3vh
+				padding-left: 2vw
+			.main-menu-services-list
+				list-style: none
+				padding: 0
+				li
+					padding-top: 2vh
+					padding-bottom: 2vh
+					height: 100%
+					border-left: 3px solid #f04e4e
+					position: relative
+					padding-left: 2vw
+					// margin-left: -3px
+					cursor: pointer
+					transition: $default-animation
+					&:nth-child(1)
+						border-color: #f04e4e
+					&:nth-child(2)
+						border-color: #ff9700
+					&:nth-child(3)
+						border-color: #fecc17
+					&:nth-child(4)
+						border-color: #00bff3
+					&:hover
+						background-color: #45474f
+						a
+							color: #fff
+					a
+						font-family: "RobotoRegular"
+						font-size: 16pt
+						font-weight: 400
+						text-decoration: none
+						color: #6d6d76
+						position: relative
+						transition: $default-animation
+		.main-menu-links
+			padding: $main-menu-padding
+			.main-menu-links-caption
+				font-family: "RobotoRegular"
+				font-size: 24pt
+				font-weight: 400
+				color: #fff
+			.main-menu-links-content
+				list-style-type: none
+				position: relative
+				margin-left: 0
+				padding: 0
+				li
+					padding-left: 1.5em
+					// text-indent: -1em
+					padding-bottom: .5vh
+					padding-top: .5vh
+					cursor: pointer
+					&:before
+						content: "\1f862"
+						font-weight: bolder
+						position: absolute
+						left: 0
+						padding-top: .3em
+						// padding-left: 1em
+					&:hover
+						a
+							color: #00bff3
+					a
+						font-family: "RobotoRegular"
+						font-size: 16pt
+						font-weight: 400
+						text-decoration: none
+						color: #6d6d76 
+						transition: $default-animation
+					&:first-child
+						&:before
+							color: #00bff3
+						a
+							color: #00bff3
+		.main-menu-search
+			padding: $main-menu-padding
+			padding-top: 0
+			.main-menu-search-caption
+				font-family: "RobotoRegular"
+				font-size: 24pt
+				font-weight: 400
+				color: #fff
+			form				
+				.main-menu-search-input
+					width: 100%
+					background-color: transparent
+					border: none
+					outline: none
+					padding: 1vh 0
+					border-bottom: 3px solid #414549
+					transition: $default-animation
+					&:focus
+						border-color: #00bff3
+		.main-menu-back
+			padding-left: 2vw
+			padding-bottom: 4vh
+			a
+				text-decoration: none
+				color: #fff
+				&:before
+					content: "\1f860"
+					font-size: 24pt
+	
+	.header-content
+		padding: 5vh 10vw
+		.header-descr
+			.header-descr-content
+				.header-inscr
+					font-family: "RobotoLight"
+					font-weight: 100
+					font-size: 46pt
+					color: #fff
+					line-height: 1.1
+				.header-descr-inscr
+					margin-top: 3vh
+					font-family: "RobotoLight"
+					font-weight: lighter
+					font-size: 18pt
+					color: #9699a6
+				.header-button, .button
+					margin-top: 3vh
+					display: inline-block //For width on content
+					cursor: pointer
+					color: #fff
+					background-color: $black-button-bg
+					padding: 1vh 1vw
+					border-radius: 20px
+					transition: $default-animation
+					&:hover
+						filter: saturate(90%)
+					&:active
+						filter: saturate(80%)
+		.header-img
+			.header-img-content
+				width: 100%
+				height: 100%
+				object-fit: cover
+
+
+
+
+
+
+//Separated
+.home-header
+	.home-header-content
+		max-height: 100vh !important
+		background-color: #25292c
+		background-image: url("../img/pictures/stars.png")
+		background-position: center
+		background-repeat: repeat
+		// background-size: contain
+		background-size: cover
+		.home-header-descr
+			.home-header-caption
+				color: #fefeff
+				font-family: "RobotoLight"
+				font-size: 86pt
+				font-weight: lighter
+				line-height: 1 //?
+			.home-header-inscr
+			.home-header-descr-inscr
+			.home-header-button
+				background-color: #f04e4e
+	.home-header-img
+		.home-header-img-content
+			background: url("../img/pictures/earth.png") center no-repeat
+			background-size: cover
+	.navbar-home-link
+		a
+			color: #00bff3 !important
+		&:before
+			content: ''
+			border-top: #00bff3 solid 5px
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+
+.home--check-domain
+	padding: 0 10vw
+	background-color: #00bff3
+	&-content
+		.home--check-domain-img
+			padding-top: 5vh
+			.home--check-domain-content
+		.home--check-domain-check
+			.home--check-domain-caption
+				font-family: "RobotoLight"
+				font-weight: lighter
+				font-size: 46pt
+				color: #fff
+			.home--check-domain-descr
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 16pt
+				color: #fff
+				margin-bottom: 5vh
+			.home--check-domain-form
+				min-height: 5vh
+				display: flex
+				// flex-direction: row
+				.home--check-domain-address
+					flex: 80%
+					border: none
+					outline: none
+					background: transparent
+					transition: $default-animation
+					border-bottom: 2px solid #5bdcff
+					font-family: "RobotoRegular"
+					font-weight: lighter
+					font-size: 16pt
+					color: #5bdcff
+					vertical-align: middle
+					&:focus
+						border-bottom: 2px solid #fff
+						color: #fff
+					&::placeholder
+						color: #5bdcff
+				.select2-container--open
+					.select2-selection
+						border-bottom: 2px solid #fff !important	
+					.select2-selection__rendered
+						color: #fff !important
+					.select2-selection__arrow
+						b
+							border-color: transparent transparent #fff transparent !important
+				.select2-container
+					flex: 20%
+					margin-left: 2vw
+					.select2-selection
+						transition: $default-animation
+						background-color: transparent
+						border: none
+						outline: none
+						border-radius: 0
+						border-bottom: 2px solid #5bdcff	
+						min-height: 100%
+						.select2-selection__rendered
+							font-family: "RobotoRegular"
+							font-weight: lighter
+							font-size: 16pt
+							color: #5bdcff
+						.select2-selection__arrow
+							b
+								border-color: #5bdcff transparent transparent transparent
+			.home--check-domain-button
+				background-color: #25292c
+				padding: 1.5vh 1.5vw
+				font-family: "RobotoRegular"
+				font-weight: 400
+				font-size: 16pt
+				border-radius: 30px
+				&:focus, &:visited
+					outline: none
+					border: none
+				&:hover
+					transform: scale(1.05) //??
+					filter: none
+				&:active
+					filter: none
+			.home--check-domain-all
+				margin-left: 2vw
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 14pt
+				text-decoration: none
+				color: #fff
+				transition: $default-animation
+				&:hover
+					filter: invert(5%)
+
+.home--hosting-pluses
+	padding: 10vh 15vw
+	.home--hosting-pluses-list
+		align-items: center
+		.home--hosting-plus
+			display: flex
+			margin-bottom: 7vh
+			&:nth-child(4), &:nth-child(5), &:nth-child(6)
+				margin-bottom: 0
+			.home--hosting-pluses-img
+				padding-right: 1vw
+			.home--hosting-plus-content
+				.home--hosting-pluses-caption
+					font-family: "RobotoLight"
+					font-weight: lighter
+					font-size: 30pt
+				.home--hosting-pluses-descr
+					font-family: "RobotoRegular"
+					font-weight: lighter
+					font-size: 14pt
+					color: #9699a6
+				.home--hosting-pluses-button
+					margin-top: 1vh
+					user-select: none
+					background-color: #f2f3f5
+					color: #cdcfd7
+					transition: $default-animation
+					&:hover
+						background-color: #f04e4e
+						color: #fff
+					&:active
+						filter: invert(5%)
+
+.home--hosting-offers
+	&-content
+		.home--hosting-offers-shared, 
+		.home--hosting-offers-vps,
+		.home--hosting-offers-dedicated
+			padding: 5vh 3vw 
+		.home--hosting-offers-shared
+			background-color: #f04e4e
+			.home--hosting-offers-try-inscr
+				background-color: #cb4243
+		.home--hosting-offers-vps
+			background-color: #ff9700	
+			.home--hosting-offers-try-inscr
+				background-color: #ec8e06
+		.home--hosting-offers-dedicated
+			background-color: #fecc17
+			.home--hosting-offers-try-inscr
+				background-color: #f0bc00
+			.home--hosting-offers-try-button
+		.home--hosting-offers-caption
+			font-family: "RobotoLight"
+			font-weight: lighter
+			font-size: 42pt
+			color: #fff
+			.home--hosting-offers-bold
+				font-family: "RobotoBold"
+				font-weight: bold
+		.home--hosting-offers-descr
+			font-family: "RobotoRegular"
+			font-weight: lighter
+			font-size: 16pt
+			line-height: 1.3
+			color: #fff
+		.home--hosting-offers-try
+			margin-top: 3vh
+			display: flex
+			height: 20%
+			width: 90%
+			align-items: center
+			&-inscr
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 16pt
+				height: 100%
+				width: 100%
+				flex: 80%
+				cursor: pointer
+				color: #fff
+				padding: 1vh 2vw
+				border-radius: 30px
+				display: flex
+				align-items: center
+				// border-top-right-radius: 0
+				// border-bottom-right-radius: 0
+			&-button
+				z-index: 777 !important
+				cursor: pointer
+				flex: 20%
+				// max-height: 100%
+				width: 100%
+				img
+					object-fit: cover
+					width: 100%
+					height: 100%
+					transform: rotate(90deg) scale(0.65) translateY(110%) ///Aaaa, what a nonresponsive
+				// &:before
+				// 	content: '\1f846'
+				// 	color: #fff
+
+.home--advantages
+	padding: 10vh 15vw
+	&-responsive //Active when resoluition <=1200px
+		display: none
+		.home--advantages-subcaption
+			font-family: "RobotoRegular"
+			font-weight: 400
+			font-size: 24pt
+			color: #31364c
+			margin-bottom: 0
+		.home--advantages-subdescr
+			font-family: "RobotoRegular"
+			font-weight: lighter
+			font-size: 14pt
+			color: #9699a6
+		div[class^="home--advantages-left"], div[class^="home--advantages-right"]
+			display: flex
+			margin-bottom: 3vh
+		// *:not(.home--advantages-img)
+		// 	flex: 85%
+		div[class^="home--advantages-left"]
+			text-align: right
+			.home--advantages-wrap
+				padding-right: 3vw
+		div[class^="home--advantages-right"]
+			text-align-last: left
+			.home--advantages-wrap
+				padding-left: 3vw
+		.home--advantages-img
+			flex: 15%
+			// border-radius: 50%
+			// border: 1px solid black ..Do no uncomment it!
+			&-content
+				width: 100%
+				height: 100%
+		.home--advantages-left-perfomance
+			img
+				width: 100%
+				height: 100%
+		.home--advantages-wrap
+			flex: 85%
+			display: flex
+			flex-direction: column
+	&-caption
+		display: block
+		text-align: center
+		margin-bottom: 7vh
+		h2
+			font-family: "RobotoLight"
+			font-weight: lighter
+			font-size: 46pt
+			color: #31364c
+		p
+			font-family: "RobotoRegular"
+			font-weight: lighter
+			font-size: 16pt
+			color: #9699a6
+	&-content
+		.home--advantages-left
+			div
+				margin-bottom: 1vh
+			.home--advantages-wrap
+				padding-right: 3vw
+		.home--advantages-right
+			div
+				margin-bottom: 1vh
+			.home--advantages-wrap
+				padding-left: 3vw
+		.home--advantages-subcaption
+			font-family: "RobotoRegular"
+			font-weight: 400
+			font-size: 24pt
+			color: #31364c
+			margin-bottom: 0
+		.home--advantages-subdescr
+			font-family: "RobotoRegular"
+			font-weight: lighter
+			font-size: 14pt
+			color: #9699a6
+		.home--advantages-img
+			flex: 15%
+			// border-radius: 50%
+			// border: 1px solid black ..Do no uncomment it!
+			&-content
+				width: 100%
+				height: 100%
+		.home--advantages-left
+			text-align: right
+		.home--advantages-left>div, .home--advantages-right>div
+			display: flex
+			*:not(.home--advantages-img)
+				flex: 90%
+		.home--advantages-server
+			text-align: center
+			// padding: 0
+			&-content
+				height: 100%
+
+.home--reviews
+	background: url("../img/bg/customer_reviews-bg.png") center bottom no-repeat
+	background-size: cover
+	&-content
+		padding: 10vh 15vw
+		.home--reviews-caption
+			display: block
+			text-align: center
+			margin-bottom: 5vh
+			h2
+				font-family: "RobotoLight"
+				font-weight: lighter
+				font-size: 46pt
+				color: #fff
+			p
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 16pt
+				color: #fff
+				width: 70%
+				margin: 0 auto
+	.home--reviews-block
+		.home--reviews-review
+			text-align: center
+			&:first-child
+				.home--reviews-review-text
+					background-color: #6739b6
+					border-top-color: #6739b6
+			&:nth-child(2)
+				.home--reviews-review-text
+					background-color: #9c26b0
+					border-top-color: #9c26b0
+			&:last-child
+				.home--reviews-review-text
+					background-color: #e91d62
+					border-top-color: #e91d62
+			.home--reviews-review-text
+				font-family: "RobotoLight"
+				font-weight: lighter
+				font-style: italic
+				font-size: 16pt
+				color: #fff
+				line-height: 1.3
+				border-radius: 30px
+				padding: 3vh 1vw
+				position: relative
+				&:after
+					top: 100%
+					left: 50%
+					border: solid transparent
+					content: ''
+					height: 0
+					width: 0
+					position: absolute
+					pointer-events: none
+					border-top-color: inherit
+					border-width: 20px
+					margin-left: -20px
+			.home--reviews-review-img
+				padding-bottom: 1vh
+				padding-top: 5vh
+				.home--reviews-review-img-content
+					width: 20%
+			.home--reviews-review-name
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 16pt
+				color: #fff
+			.home--reviews-review-link
+				font-size: 14pt
+				color: #77e2ff
+				text-decoration: none
+				transition: $default-animation
+				&:hover
+					filter: invert(12%)
+
+.home--pricing
+	background-color: #fafafa
+	padding: 7vh 10vw 10vh 10vw
+	&-caption
+		display: block
+		text-align: center
+		// margin: 0 auto
+		margin-bottom: 10vh
+		h2
+			font-family: "RobotoLight"
+			font-size: 46pt
+			font-weight: lighter
+			color: #31364c
+			margin-bottom: 0
+		p
+			font-family: "RobotoRegular"
+			font-size: 16pt
+			font-weight: lighter
+			color: #9699a6
+	&-content, &-content-responsive
+		.home--pricing-list
+			padding: 3vh 0
+			list-style-type: none
+			padding-left: 0
+			margin-bottom: 0
+			text-align: center
+			li
+				font-family: "RobotoRegular"
+				font-weight: 400
+				font-size: 16pt
+				color: #31364c
+				padding-top: 1vh
+				&:not(:last-child)
+					padding-bottom: 1vh
+					border-bottom: 1px #f5f5f5 solid
+		.home--pricing-choice
+			padding-right: 0
+			padding-left: 0
+			text-align: center
+			&-stub
+				*
+					color: transparent !important
+					user-select: none
+					pointer-events: none
+			&-caption
+				font-family: "RobotoLight"
+				font-weight: lighter
+				font-size: 30pt
+				color: #9699a6
+				margin-bottom: 0
+			&-descr
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 14pt
+				color: #9699a6
+			&-content
+				// padding: 3vh 0
+				background-color: #fff
+				.home--pricing-choice-list
+					li
+		.home--pricing-offer-active
+			z-index: 999 !important
+			box-shadow: 0px 8px 35px rgba(41, 45, 49, .15) //For responsive maybe delete
+			.home--pricing-offer-caption
+			.home--pricing-offer-price
+			.home--pricing-offer-content
+				background-color: #fff
+			.home--pricing-offer-button
+				padding-bottom: 5vh
+		.home--pricing-offer
+			padding-right: 0
+			padding-left: 0
+			&:nth-child(2)
+				.home--pricing-offer-caption
+					background-color: #dd4344
+					&-subdescr
+						color: #f37e7e
+				.home--pricing-offer-price
+					background-color: #f04e4e
+					&-subprice
+						&-from
+							color: #f37e7e
+				.home--pricing-offer-button
+					&-content
+						background-color: #f04e4e
+			&:nth-child(3)
+				.home--pricing-offer-caption
+					background-color: #f69201
+					&-subdescr
+						color: #ffbd5c
+				.home--pricing-offer-price
+					background-color: #ff9700
+					&-subprice
+						&-from
+							color: #ffbd5c
+				.home--pricing-offer-button
+					&-content
+						background-color: #ff9700
+			&:last-child
+				.home--pricing-offer-caption
+					background-color: #f8c407
+					&-subdescr
+						color: #ffe586
+				.home--pricing-offer-price
+					background-color: #fdcb17
+					&-subprice
+						&-from
+							color: #ffe586
+				.home--pricing-offer-button
+					&-content
+						background-color: #fdcb17	
+			&-caption
+				text-align: center
+				padding: 3vh 0
+				&-subcaption
+					font-family: "RobotoBold"
+					font-size: 30pt
+					font-weight: bold
+					color: #fff
+					margin-bottom: 0
+					line-height: 1.1
+				&-subdescr
+					font-family: "RobotoRegular"
+					font-weight: 400
+					font-size: 18pt
+					margin-bottom: 0
+					line-height: 1
+			&-price
+				text-align: center
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 100%
+				// margin-bottom: 3vh
+				&-main
+					font-family: "RobotoLight"
+					font-weight: lighter
+					font-size: 60pt
+					color: #fff
+				&-subprice
+					display: block
+					text-align: left
+					&-content
+						font-family: "RobotoLight"
+						font-weight: lighter
+						font-size: calc(60pt/2)
+						color: #fff
+						line-height: 1.2
+					&-from
+						font-family: "RobotoRegular"
+						font-weight: lighter
+						font-size: 12pt
+			&-content
+				.home--pricing-offer-list
+					li
+			&-button
+				// display: flex
+				// align-items: center
+				// justify-content: center
+				text-align: center
+				background-color: #f5f5f5
+				padding: 3vh 0
+				&-content
+					margin-top: 0
+					font-family: "RobotoBold"
+					font-weight: bold
+					font-size: 18pt
+					color: #fff
+					border-radius: 30px
+					width: 80%
+	.home--pricing-content-responsive
+		display: none
+		.home--pricing-accordion-content
+			display: none
+			font-size: 16pt !important
+		.home--pricing-accordion-caption
+			cursor: pointer
+			font-size: 18pt !important
+		.home--pricing-offer
+			padding-right: 0
+			padding-left: 0
+			&:first-child
+				.home--pricing-offer-caption
+					background-color: #dd4344
+					&-subdescr
+						color: #f37e7e
+				.home--pricing-offer-price
+					background-color: #f04e4e
+					&-subprice
+						&-from
+							color: #f37e7e
+				.home--pricing-offer-button
+					&-content
+						background-color: #f04e4e
+			&:nth-child(2)
+				.home--pricing-offer-caption
+					background-color: #f69201
+					&-subdescr
+						color: #ffbd5c
+				.home--pricing-offer-price
+					background-color: #ff9700
+					&-subprice
+						&-from
+							color: #ffbd5c
+				.home--pricing-offer-button
+					&-content
+						background-color: #ff9700
+			&:last-child
+				.home--pricing-offer-caption
+					background-color: #f8c407
+					&-subdescr
+						color: #ffe586
+				.home--pricing-offer-price
+					background-color: #fdcb17
+					&-subprice
+						&-from
+							color: #ffe586
+				.home--pricing-offer-button
+					&-content
+						background-color: #fdcb17	
+			&-price
+				justify-content: center !important
+
+.home--support
+	background-color: #6739b6
+	padding: 10vh 10vw 
+	padding-bottom: 0
+	&-content
+		.home--support-main
+			// padding-right: 0
+			// padding-left: 0
+			.home--support-caption
+				margin-bottom: 7vh
+				.home--support-subcaption
+					font-family: "RobotoLight"
+					font-weight: lighter
+					font-size: 46pt
+					color: #fff
+					margin-bottom: 0
+				.home--support-subdescr
+					font-family: "RobotoRegular"
+					font-weight: lighter
+					font-size: 16pt
+					color: #fff
+			.home--support-form
+				padding: 0
+				margin-bottom: 1vh
+				input, textarea
+					padding: 0
+					background-color: transparent
+					outline: none
+					border: none
+					text-decoration: none
+					border-bottom: 3px solid #8860cd
+					transition: $default-animation
+					width: 100%
+					font-family: "RobotoRegular"
+					font-weight: 400
+					font-size: 16pt
+					color: #8860cd
+					resize: none
+					&::placeholder
+						color: #8860cd
+					&:focus
+						border-bottom-color: #fff
+						color: #fff
+				input
+					padding-bottom: 1vh
+				textarea
+					line-height: 1.3
+				&-inputs
+					width: 100%
+					margin-left: 0
+					margin-bottom: 3vh
+					.home--support-form-name
+						margin-right: 1vw
+					.home--support-form-email
+						margin-left: 1vw
+				&-question
+			.home--support-submit
+				background-color: #25292c
+				padding: 1.5vh 2vw
+				border-radius: 30px
+				margin-right: 3vw
+				transition: $default-animation
+				&:hover
+					filter: none
+					transform: scale(1.05)
+				&:active
+					filter: none
+			.home--support-chat
+				color: #8860cd
+				font-family: "RobotoRegular"
+				font-weight: 400
+				font-size: 16pt
+				transition: $default-animation
+				text-decoration: none
+				border-bottom: 1px dashed #8860cd
+				&:hover
+					color: #fff
+					border-bottom-color: #fff
+		.home--support-img
+			text-align: center
+			&-content
+				// width: 90%
+				height: 100%
+
+.home--happy-clients
+	padding: 5vh 10vw
+	padding-bottom: 10vh
+	&-caption
+		margin-bottom: 5vh
+		&-content
+			position: relative
+			.home--happy-clients-subcaption
+				font-family: "RobotoLight"
+				font-weight: lighter
+				font-size: 46pt
+				color: #31364c
+				margin-bottom: 0
+			.home--happy-clients-subdescr
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 16pt
+				color: #9699a6
+	&-carousel
+		.item
+			img
+				// width: 100% !important
+	.owl-stage
+		display: flex
+		align-items: center
+	.home--happy-clients-wrap
+		white-space: nowrap //Dangeorus
+		#home--custom-dots
+			text-align: right
+			button
+				background-color: transparent
+				border: none
+				cursor: pointer
+				outline: none
+				padding: 0 !important
+				span
+					transition: $default-animation
+					background-color: #e1e1e1
+			.active
+				span
+					background-color: #00bff3
+
+.follow
+	background-color: #292d31
+	padding: 7vh 10vw
+	&-content
+		position: relative
+		.follow-caption
+			.follow-subcaption
+				font-family: "RobotoLight"
+				font-weight: lighter
+				font-size: 46pt
+				margin-bottom: 0
+				color: #fff
+			.follow-subdescr
+				font-family: "RobotoRegular"
+				font-weight: lighter
+				font-size: 16pt
+				color: #9699a6
+				width: 90%
+		.follow-social
+			// white-space: nowrap
+			width: 100%
+			position: absolute
+			bottom: 10% //Let's bomb on responsive
+			right: 0
+			br
+				display: none
+			a
+				height: 100%
+				margin-right: .5em
+				transition: $default-animation
+				&:last-child
+					margin-right: 0
+				&:hover
+					filter: saturate(70%) //Maybe change
+				.follow-social-content
+					width: 10%
+
+.main-footer
+	background-color: #25292c
+	background-image: url("../img/bg/footer-bg.png")
+	background-repeat: no-repeat
+	// background-size: cover //WTF??!
+	background-position: top center
+	// padding: 10vh 10vw
+	&-list-close
+		display: none
+	&-caption
+		font-family: "RobotoRegular"
+		font-weight: 400
+		font-size: 24pt
+		color: #fff
+		margin-bottom: 3vh
+	&-content
+		padding: 10vh 10vw
+		padding-bottom: 0
+		.main-footer-company
+			&-logo
+				user-select: none
+				margin-bottom: 3vh
+				a
+					text-decoration: none
+					transition: $default-animation
+					&:hover
+						filter: invert(10%)
+				&-img
+					width: 10%
+				&-text
+					font-family: "RobotoBold"
+					font-size: 36pt
+					font-weight: bolder
+					font-style: italic
+					vertical-align: middle
+					color: #fff
+			&-descr
+				margin-bottom: 5vh
+				font-family: "RobotoRegular"
+				font-weight: 400
+				font-size: 14pt
+				color: #45474f
+				&-link
+					color: #9699a6
+					text-decoration: none
+					transition: $default-animation
+					&:hover
+						filter: invert(10%)
+			&-info
+				&-wrap
+					flex: 93%
+					// display: inline-block
+					padding-left: 1vw
+				&-img
+					flex: 7%
+					&-content
+						width: 100%
+				&-caption
+					font-family: "RobotoRegular"
+					font-weight: 400
+					font-size: 16pt
+					color: #fff
+					margin-bottom: .5vh
+				&-descr
+					font-family: "RobotoRegular"
+					font-weight: 400
+					font-size: 14pt
+					color: #9699a6
+				&-address
+				&-phone
+					&-list
+						list-style-type: none
+						padding-left: 0
+						margin-bottom: 0
+						li
+							font-family: "RobotoRegular"
+							font-weight: 400
+							font-size: 14pt
+							color: #45474f
+							span
+								font-family: "RobotoRegular"
+								font-weight: 400
+								font-size: 14pt
+								color: #9699a6
+				&-email
+				&-phone, &-address, &-email
+					display: flex
+					margin-bottom: 2vh
+					&:last-child
+						margin-bottom: 0
+		.main-footer-hosting
+			&-list
+				overflow-x: hidden
+				list-style-type: none
+				padding-left: 0
+				li
+					position: relative
+					margin-bottom: 3vh
+					&:last-child
+						margin-bottom: 0
+					&:hover:before
+						color: #00bff3
+					&:before
+						content: '\1f862'
+						color: #9699a6
+						padding-right: 1vw
+						transition: $default-animation
+					a
+						font-family: "RobotoRegular"
+						font-weight: 400
+						font-size: 14pt
+						color: #9699a6
+						text-decoration: none
+						transition: $default-animation
+						&:hover
+							color: #00bff3
+		.main-footer-links
+			&-list
+				overflow-x: hidden
+				list-style-type: none
+				padding-left: 0
+				li
+					position: relative
+					margin-bottom: 3vh
+					&:last-child
+						margin-bottom: 0
+					&:hover:before
+						color: #00bff3
+					&:before
+						content: '\1f862'
+						color: #9699a6
+						padding-right: 1vw
+						transition: $default-animation
+					a
+						font-family: "RobotoRegular"
+						font-weight: 400
+						font-size: 14pt
+						color: #9699a6
+						text-decoration: none
+						transition: $default-animation
+						&:hover
+							color: #00bff3
+		.main-footer-subscribe
+			&-descr
+				height: inherit !important
+				font-family: "RobotoRegular"
+				font-weight: 400
+				font-size: 14pt
+				color: #9699a6
+				margin-bottom: 2vh
+			&-form
+				position: relative
+				input
+					display: block
+					margin-bottom: 3vh
+					padding-bottom: .7vh
+					background-color: transparent
+					border: none
+					outline: none
+					width: 100%
+					border-bottom: 3px solid #9699a6
+					transition: $default-animation
+					font-family: "RobotoRegular"
+					font-weight: 400
+					font-size: 16pt
+					color: #fff
+					&:focus
+						border-bottom-color: #00bff3
+					&::placeholder
+						// opacity: 0
+						color: #45474f
+				.main-footer-subscribe-submit
+					margin-top: 1vh
+					background-color: #8dc63f
+					font-family: "RobotoRegular"
+					font-weight: 400
+					font-size: 14pt
+					border-radius: 30px
+					color: #fff
+		.main-footer-overlay
+			width: 100vw
+			height: 100vh
+			z-index: 999
+			position: fixed
+			top: 0
+			left: 0
+			background-color: rgba(0, 0, 0, .8)
+			text-align: center
+			transition: $default-animation
+			// transition-duration: 1s
+			li
+				&:before
+					display: none
+			.main-footer-list-close
+				text-decoration: none
+				font-weight: bolder
+				font-size: 7vw
+				line-height: 0
+				color: #fff
+				position: absolute
+				top: 5vw
+				right: 5vw
+				transition: $default-animation
+				&:hover
+					filter: invert(10%)
+			.main-footer-list-wrap
+				width: 100%
+				position: relative
+				transform: translate(0, 50%)
+
+	.main-footer-up
+		a
+			img
+				position: absolute
+				width: 5%
+	.main-footer-subfooter
+		background-color: #222629
+		margin-top: 7vh
+		padding: 5vh 10vw
+		&-block
+			display: none
+		&-content
+			font-family: "RobotoRegular"
+			font-weight: 400
+			font-size: 14pt
+			color: #45474f
+			a
+				color: #9699a6
+				text-decoration: none
+				transition: $default-animation
+				&:hover
+					filter: invert(10%)
+
+
+
+
+
+
+
+//***Select2***
+//Main menu
+.select2-container
+	.select2-dropdown
+		border-radius: 0
+		border: none
+.select2-results__option
+	background-color: #fff 
+	color: #cdcfd7
+.select2-results__option--highlighted
+	background-color: #fafafa !important
+	color: #00bff3 !important
+
+//Check your domain name (home)
+.select2-container
+	.select2-results
+		.select2-results__options
+			max-height: 100% !important
+			*[aria-selected="true"]
+				background-color: #00afdf
+				color: #fff
+			li
+				font-size: 14pt
+				padding-left: .5em
+
+
+
+@import "media" //Always in end
