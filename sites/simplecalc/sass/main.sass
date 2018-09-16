@@ -1,0 +1,60 @@
+
+@import "fonts"
+@import "libs"
+@import "vars"
+
+body, html
+	margin: 0
+	padding: 0
+	font-family: Arial
+	font-size: 1em
+	opacity: 1
+	overflow-x: hidden
+	min-width: 320px
+
+.grid
+	display: grid
+
+.button
+	cursor: pointer
+	text-align: center
+	padding: 3vh 3vw
+	font-size: 16pt
+	// border: 1px solid #a9a9a9
+	// margin: .1em
+	transition: all .2s ease-out
+	&:hover
+		background-color: #778899
+
+.number
+	background-color: #fff
+	font-weight: bolder
+
+.act
+	background-color: #d3d3d3
+	&-division, &-multiply, &-subtraction, &-addition, &-total
+		&:hover
+			background-color: #f4a460
+
+.calculator
+	background-color: #f5f5f5
+	user-select: none
+	max-width: 30vw
+	white-space: nowrap
+	&-result
+		padding-right: .1em
+		text-align: right
+		font-weight: bolder
+		font-size: 56pt
+	&-buttons
+		grid-template-columns: 1fr
+		grid-template-rows: repeat(4, 1fr)
+	&-wrap
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		grid-template-rows: 1fr
+
+
+
+
+@import "media" //Always in end
